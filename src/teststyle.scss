@@ -1,0 +1,9 @@
+$primary-color: red;
+
+.autoprefixertest {
+    display: flex;
+}
+
+body {
+    background-color: $primary-color;
+}
