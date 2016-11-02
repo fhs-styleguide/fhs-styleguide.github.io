@@ -1,21 +1,13 @@
-/* CSS Reset */
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 /* Color palette
  *  source: https://color.adobe.com/de/Flat-UI-color-theme-2469224/
  */
+
 $pickled-bluewood: #2C3E50;
 $cinnabar: #E74C3C;
 $porcelain: #ECF0F1;
 $curious-blue: #3498DB;
 $mariner: #2980B9;
 $mine-shaft: #333333;
-
 $color-shadow: rgba(black, .125);
 $color-primary: $pickled-bluewood;
 $color-accent: $cinnabar;
@@ -33,6 +25,7 @@ $color-text-link-hover: darken($cinnabar, 10%);
 $color-border: black;
 
 /* Common elements */
+
 body {
     font-family: 'Open Sans', serif;
     font-weight: 400;
@@ -40,7 +33,10 @@ body {
     color: $color-text;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     color: $color-text-heading;
 }
 
@@ -60,7 +56,8 @@ h4 {
     font-size: 1.333em;
 }
 
-small, .font_small {
+small,
+.font_small {
     font-size: .75em;
 }
 
@@ -85,7 +82,9 @@ a {
     }
 }
 
+
 /* Classes */
+
 .container {
     margin: 0 auto;
     width: 75%;
