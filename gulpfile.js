@@ -5,6 +5,7 @@ var stylelint = require('stylelint');
 var sass = require('gulp-sass');
 var reporter = require('postcss-reporter');
 var watch = require ('gulp-watch');
+var browserSync = require('browser-sync').create();
 
 gulp.task('sass', function() {
     var processorsPreSass = [
@@ -13,7 +14,7 @@ gulp.task('sass', function() {
         }),
         reporter({
             clearMessages: true,
-            throwError: true
+            throwError: false
         })
     ];
 
@@ -25,9 +26,21 @@ gulp.task('sass', function() {
         .pipe(postcss(processorsPreSass))
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processorsPostSass))
-        .pipe(gulp.dest('./dest'));
+        .pipe(gulp.dest('./dest'))
+        .pipe(browserSync.stream());
 });
 
-gulp.task('sass:watch', function() {
+gulp.task('watch', ['browser-sync'], function() {
     gulp.watch('./src/*.scss', ['sass']);
+    gulp.watch('./dest/*.html').on('change', function() {
+        browserSync.reload()
+    });
 })
+
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./dest/"
+        }
+    })
+});

@@ -1,0 +1,114 @@
+/* CSS Reset */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Color palette
+ *  source: https://color.adobe.com/de/Flat-UI-color-theme-2469224/
+ */
+$pickled-bluewood: #2C3E50;
+$cinnabar: #E74C3C;
+$porcelain: #ECF0F1;
+$curious-blue: #3498DB;
+$mariner: #2980B9;
+$mine-shaft: #333333;
+
+$color-shadow: rgba(black, .125);
+$color-primary: $pickled-bluewood;
+$color-accent: $cinnabar;
+$color-background: $porcelain;
+$color-background-shade: $curious-blue;
+$color-background-invert: black;
+$color-text: black;
+$color-text-weak: $mine-shaft;
+$color-text-strong: black;
+$color-text-heading: $pickled-bluewood;
+$color-text-invert: black;
+$color-text-link: $cinnabar;
+$color-text-link-visited: $mariner;
+$color-text-link-hover: darken($cinnabar, 10%);
+$color-border: black;
+
+/* Common elements */
+body {
+    font-family: 'Open Sans', serif;
+    font-weight: 400;
+    line-height: 1.45;
+    color: $color-text;
+}
+
+h1, h2, h3, h4 {
+    color: $color-text-heading;
+}
+
+h1 {
+    font-size: 3.157em;
+}
+
+h2 {
+    font-size: 2.369em;
+}
+
+h3 {
+    font-size: 1.777em;
+}
+
+h4 {
+    font-size: 1.333em;
+}
+
+small, .font_small {
+    font-size: .75em;
+}
+
+p {
+    margin-bottom: 1.3em;
+}
+
+xmp {
+    border: 1px solid $color-border;
+    padding: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: $color-text-link;
+    &:visited {
+        color: $color-text-link-visited;
+    }
+    &:hover {
+        color: $color-text-link-hover;
+        text-decoration: underline;
+    }
+}
+
+/* Classes */
+.container {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.note {
+    border: 1px solid $color-border;
+    padding: 1em;
+    width: auto;
+    &:before {
+        color: $color-accent;
+        font-size: 1.333em;
+        content: "Note";
+        border-right: 1px solid $color-border;
+        padding-right: 10px;
+        margin-right: 10px;
+    }
+}
+
+.link_external {
+    &:after {
+        font-family: FontAwesome;
+        content: "\f08e";
+        padding-left: 0.2em;
+    }
+}
