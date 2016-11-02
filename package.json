@@ -26,5 +26,8 @@
     "gulp-watch": "^4.3.10",
     "postcss-reporter": "^1.4.1",
     "stylelint": "^7.4.2"
+  },
+  "dependencies": {
+    "syntaxhighlighter": "^4.0.1"
   }
 }
