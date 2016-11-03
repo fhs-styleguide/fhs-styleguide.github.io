@@ -27,6 +27,7 @@ a {
 /* Classes */
 .container {
   margin: 0 auto;
+  padding: 1.6666%;
   width: 75%; }
 
 .note {
@@ -87,3 +88,34 @@ a {
 
 .bg-color--mine-shaft {
   background-color: #333333; }
+
+/* Panel */
+.panel {
+  padding: 1.66666%;
+  margin: 1.66666%;
+  border-radius: 0.2em;
+  border: 1px solid black; }
+
+.panel--small {
+  width: 30%; }
+
+.panel--medium {
+  width: 60%; }
+
+.panel--large {
+  width: 90%; }
+
+/* FLEX */
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%; }
+
+/* Sections */
+.section {
+  background-color: #ECF0F1;
+  border-radius: 0.2em;
+  padding: 0.5em; }
