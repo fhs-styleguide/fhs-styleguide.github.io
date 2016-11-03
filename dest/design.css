@@ -26,9 +26,24 @@ a {
 
 /* Classes */
 .container {
-  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 1.6666%;
-  width: 75%; }
+  width: 100%; }
+
+.container__nav {
+  width: 25%; }
+
+.container__main {
+  width: 75%;
+  padding: 1.6666%; }
+
+.nav {
+  width: 25%;
+  border-radius: 0.2em;
+  padding: 1.6666%;
+  margin: 0 auto; }
 
 .note {
   background-color: #ECF0F1;
@@ -119,3 +134,7 @@ a {
   background-color: #ECF0F1;
   border-radius: 0.2em;
   padding: 0.5em; }
+
+/* HELPER */
+.fixed {
+  position: fixed; }
