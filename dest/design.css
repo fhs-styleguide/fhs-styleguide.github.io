@@ -24,6 +24,11 @@ a {
     color: #d62c1a;
     text-decoration: underline; }
 
+/* Introduction */
+.list--disc {
+  list-style-type: disc;
+  padding-left: 1em; }
+
 /* Classes */
 .container {
   margin: 0 auto;
