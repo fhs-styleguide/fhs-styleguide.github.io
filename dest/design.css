@@ -68,3 +68,22 @@ a {
 
 .typography-headings__note {
   margin-top: 0.5em; }
+
+/* Background Colors */
+.bg-color {
+  background-color: #ECF0F1; }
+
+.bg-color--primary {
+  background-color: #2C3E50; }
+
+.bg-color--accent {
+  background-color: #E74C3C; }
+
+.bg-color--shade {
+  background-color: #3498DB; }
+
+.bg-color--mariner {
+  background-color: #2980B9; }
+
+.bg-color--mine-shaft {
+  background-color: #333333; }

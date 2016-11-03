@@ -113,3 +113,28 @@ a {
 .typography-headings__note {
     margin-top: 0.5em;
 }
+
+/* Background Colors */
+.bg-color {
+  background-color: $color-background;
+}
+
+.bg-color--primary {
+  background-color: $color-primary;
+}
+
+.bg-color--accent {
+  background-color: $color-accent;
+}
+
+.bg-color--shade {
+  background-color: $color-background-shade;
+}
+
+.bg-color--mariner {
+  background-color: $mariner;
+}
+
+.bg-color--mine-shaft {
+  background-color: $mine-shaft;
+}
