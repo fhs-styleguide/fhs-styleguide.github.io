@@ -1,13 +1,13 @@
 /* Color palette
  *  source: https://color.adobe.com/de/Flat-UI-color-theme-2469224/
  */
-
 $pickled-bluewood: #2C3E50;
 $cinnabar: #E74C3C;
 $porcelain: #ECF0F1;
 $curious-blue: #3498DB;
 $mariner: #2980B9;
 $mine-shaft: #333333;
+
 $color-shadow: rgba(black, .125);
 $color-primary: $pickled-bluewood;
 $color-accent: $cinnabar;
@@ -33,29 +33,6 @@ body {
     color: $color-text;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    color: $color-text-heading;
-}
-
-h1 {
-    font-size: 3.157em;
-}
-
-h2 {
-    font-size: 2.369em;
-}
-
-h3 {
-    font-size: 1.777em;
-}
-
-h4 {
-    font-size: 1.333em;
-}
-
 small,
 .font_small {
     font-size: .75em;
@@ -63,11 +40,6 @@ small,
 
 p {
     margin-bottom: 1.3em;
-}
-
-xmp {
-    border: 1px solid $color-border;
-    padding: 0.5em;
 }
 
 a {
@@ -91,7 +63,7 @@ a {
 }
 
 .note {
-    border: 1px solid $color-border;
+    background-color: $color-background;
     padding: 1em;
     width: auto;
     &:before {
@@ -99,8 +71,8 @@ a {
         font-size: 1.333em;
         content: "Note";
         border-right: 1px solid $color-border;
-        padding-right: 10px;
-        margin-right: 10px;
+        padding-right: 0.5em;
+        margin-right: 0.5em;
     }
 }
 
@@ -110,4 +82,59 @@ a {
         content: "\f08e";
         padding-left: 0.2em;
     }
+}
+
+/* Typography */
+.heading {
+    color: $color-text-heading;
+}
+
+.heading--extra-large {
+    font-size: 3.157em;
+}
+
+.heading--large {
+    font-size: 2.369em;
+}
+
+.heading--medium {
+    font-size: 1.777em;
+}
+
+.heading--small {
+    font-size: 1.333em;
+}
+
+.typography-headings {
+    background-color: $color-background;
+    padding: 0.5em;
+}
+
+.typography-headings__note {
+    margin-top: 0.5em;
+}
+
+/* Background Colors */
+.bg-color {
+  background-color: $color-background;
+}
+
+.bg-color--primary {
+  background-color: $color-primary;
+}
+
+.bg-color--accent {
+  background-color: $color-accent;
+}
+
+.bg-color--shade {
+  background-color: $color-background-shade;
+}
+
+.bg-color--mariner {
+  background-color: $mariner;
+}
+
+.bg-color--mine-shaft {
+  background-color: $mine-shaft;
 }

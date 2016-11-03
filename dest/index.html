@@ -3,73 +3,117 @@
 
 <head>
 	<title>StyleGuide für FrontendDevelopment</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="nav.css">
 	<link rel="stylesheet" type="text/css" href="design.css">
+	<link rel="stylesheet" type="text/css" href="prism.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-		crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-		crossorigin="anonymous">
 </head>
 
 <body>
+
+	<pre>
+		<code class="language-markup">
+		&lt;ul&gt;
+			&lt;li&gt;hallo&lt;/li&gt;
+		&lt;/ul&gt;
+
+	</code>
+	</pre>
+
 	<div class="container">
 		<nav>
-			<a href=>Brand Guide</a>
+			<a href="#brand-guide">Brand Guide</a>
 			<ul>
-				<li>Introduction</li>
-				<li>Colors</li>
-				<li>Typography</li>
-				<li>Logo</li>
+				<li><a href="#brand-guide__introduction"> Introduction</a></li>
+				<li><a href="#brand-guide__colors">Colors</a></li>
+				<li><a href="#brand-guide__typography">Typography</a></li>
+				<li><a href="#brand-guide__logo">Logo</a></li>
 			</ul>
-			<a href="">CSS Methodology</a>
+			<a href="#CSS">CSS Methodology</a>
 			<ul>
-				<li>Code style rules like e.g. indentation, units, file structure, pre-processor</li>
-				<li>Class naming conventions (with examples)</li>
+				<li><a href="#CSS__code-rules">Code style rules like e.g. indentation, units, file structure, pre-processor</a></li>
+				<li><a href="#CSS__class-nameing">Class naming conventions (with examples)</a></li>
 			</ul>
-			<a href="">Component Library</a>
+			<a href="#component-library">Component Library</a>
 			<ul>
-				<li>Headings</li>
-				<li>Lists</li>
-				<li>Links</li>
-				<li>Buttons</li>
-				<li>Form Elements</li>
-				<li>Media Blocks</li>
-				<li>Navigation</li>
+				<li><a href="#component-library__headings">Headings<</a>/li>
+				<li><a href="#component-library__lists">Lists</a></li>
+				<li><a href="#component-library__links">Links</a></li>
+				<li><a href="#component-library__buttons">Buttons</a></li>
+				<li><a href="#component-library__form-elements">Form Elements</a></li>
+				<li><a href="#component-library__media-blocks">Media Blocks</a></li>
+				<li><a href="#component-library__navigation">Navigation</a></li>
 			</ul>
 		</nav>
 		<section id="brand-guide">
+			<h1 class="heading heading--extra-large">Brand Guide</h1>
 			<section id="brand-guide__introduction">
 				<h1>Introduction</h1>
 				<p>As Dabilu Sports is currently in the process of transforming form a small StartUp to a bigger corporation we felt the
 					need to develop a guideline for our brand. It should give our developers, designers, copywriters and the public a consistent
 				</p>
 			</section>
-			<section id="brand-guide__colors"></section>
+			<section id="brand-guide__colors">
+				<h2 class="heading heading--large">Colors</h2>
+				<p>The Primary Brand Colors are used to represent Dabidu Sports in public and must reflect the Dabidu Sports brand. These colors are part of our corporate identity. </p>
+				<div class="bg-color bg-color--primary">$pickled-bluewood: #2C3E50;</div>
+				<div class="bg-color bg-color--accent">$cinnabar: #E74C3C;</div>
+				<div class="bg-color">$porcelain: #ECF0F1;</div>
+				<div class="bg-color bg-color--shade">$curious-blue: #3498DB;</div>
+				<div class="bg-color bg-color--mariner">$mariner: #2980B9;</div>
+				<div class="bg-color bg-color--mine-shaft">$mine-shaft: #333333;</div>
+			</section>
 			<section id="brand-guide__typography">
-				<h1>Typography</h1>
-				<h2>Headings</h2>
-				<p>A scale of 1.333 (Perfect Fourth) was used for increased clarity. Open Sans is to be used throughout, as it TODO
-					<h1>Heading level 1</h1>
-					<xmp>
-						<h1>Heading level 1</h1>
-					</xmp>
-					<h2>Heading level 2</h2>
-					<xmp<h2>Heading level 1</h2>
-						</xmp>
-						<h3>Heading level 3</h3>
-						<xmp>
-							<h3>Heading level 1</h3>
-						</xmp>
-						<h4>Heading level 4</h4>
-						<xmp>
-							<h4>Heading level 1</h4>
-						</xmp>
-						<p class="note">To keep a clear and simple structure, heading level 5 and 6 must not be used.</p>
+				<h2 class="heading heading--large">Typography</h2>
+				<h3 class="heading heading--medium">Headings</h3>
+				<p>A default base size of 16px is assumed. A scale of 1.333 (Perfect Fourth) is used for increased clarity. Open Sans is to be used throughout, as it TODO</p>
+				<div class="typography-headings">
+					<div>
+						<h1 class="heading heading--extra-large">Heading level 1</h1>
+						<p>3.157em (50.15px) - Extra large</p>
+					</div>
+					<div>
+						<pre><code class="language-markup">
+							&lt;h1 class="heading heading--extra-large">Heading level 1&lt;/h1>
+						</code></pre>
+					</div>
+					<div>
+						<h2 class="heading heading--large">Heading level 2</h2>
+						<p>2.369em (37.904px) - Large</p>
+					</div>
+					<div>
+						<pre><code class="language-markup">
+							&lt;h2 class="heading heading--large">Heading level 2&lt;/h2>
+						</code></pre>
+					</div>
+					<div>
+						<h3 class="heading heading--medium">Heading level 3</h3>
+						<p>1.777em (28.432px) - Medium</p>
+					</div>
+					<div>
+						<pre><code class="language-markup">
+							&lt;h3 class="heading heading--medium">Heading level 3&lt;/h3>
+						</code></pre>
+					</div>
+					<div>
+						<h4 class="heading heading--small">Heading level 4</h4>
+						<p>1.333em (21.328px) - Small</p>
+					</div>
+					<div>
+						<pre><code class="language-markup">
+							&lt;h4 class="heading heading--small">Heading level 4&lt;/h4>
+						</code></pre>
+					</div>
+				</div>
+				<p class="note typography-headings__note">To keep a clear and simple structure, heading level 5 (h5) and 6 (h6) must not be used.</p>
 			</section>
 			<section id="brand-guide__logo"></section>
+		</section>
+		<section id="CSS">
+			<h2 class="heading heading--large">CSS Methodology</h2>
+			<section id="CSS__code-style">Code style</section>
+			<section id="CSS__class-naming">Class Naming</section>
 		</section>
 		<section id="component-library">
 			<section id="component-library__headings"></section>
@@ -80,16 +124,18 @@
 						<h3 class="panel-title">Unordered List</h3>
 					</div>
 					<div class="panel-body">
-						<pre class="prettyprint">
-            &lt;ul>
-              &lt;li>
-                Unordered list
-              &lt;/li>
-              &lt;li>
-                Lorem ipsum
-              &lt;/li>
-            &lt;/ul>
-                </pre>
+						<pre>
+							<code class="language-markup">
+								&lt;ul>
+								  &lt;li>
+									Unordered list
+								  &lt;/li>
+								  &lt;li>
+									Lorem ipsum
+								  &lt;/li>
+								&lt;/ul>
+							c</code>
+						</pre>
 					</div>
 				</div>
 				<xmp>
@@ -118,9 +164,7 @@
 
 		<script src="https://use.fontawesome.com/8558f65789.js"></script>
 		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-			crossorigin="anonymous"></script>
+		<script src="prism.js"></script>
 </body>
 
 </html>
