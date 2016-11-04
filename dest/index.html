@@ -74,22 +74,22 @@
           <div class="panel panel--large">
             <h1 class="heading heading--extra-large">Heading level 1</h1>
             <p>3.157em (50.15px) - Extra large</p>
-            <pre><code class="language-markup">&lt;h1 class="heading heading--extra-large">Heading level 1&lt;/h1></code></pre>
+            <pre><code class="language-markup">&lt;h1 class="heading heading--extra-large">...&lt;/h1></code></pre>
           </div>
           <div class="panel panel--large">
             <h2 class="heading heading--large">Heading level 2</h2>
             <p>2.369em (37.904px) - Large</p>
-            <pre><code class="language-markup">&lt;h2 class="heading heading--large">Heading level 2&lt;/h2></code></pre>
+            <pre><code class="language-markup">&lt;h2 class="heading heading--large">...&lt;/h2></code></pre>
           </div>
           <div class="panel panel--large">
             <h3 class="heading heading--medium">Heading level 3</h3>
             <p>1.777em (28.432px) - Medium</p>
-            <pre><code class="language-markup">&lt;h3 class="heading heading--medium">Heading level 3&lt;/h3></code></pre>
+            <pre><code class="language-markup">&lt;h3 class="heading heading--medium">...&lt;/h3></code></pre>
           </div>
           <div class="panel panel--large">
             <h4 class="heading heading--small">Heading level 4</h4>
             <p>1.333em (21.328px) - Small</p>
-            <pre><code class="language-markup">&lt;h4 class="heading heading--small">Heading level 4&lt;/h4></code></pre>
+            <pre><code class="language-markup">&lt;h4 class="heading heading--small">...&lt;/h4></code></pre>
           </div>
         </div>
         <p class="note">To keep a clear and simple structure, heading level 5 (h5) and 6 (h6) must not be used.</p>
@@ -101,34 +101,47 @@
         <section id="CSS__class-naming">Class Naming</section>
       </section>
       <section id="component-library">
+        <h1 class="heading heading--extra-large">Component Library</h1>
         <section id="component-library__headings"></section>
         <section id="component-library__lists">
           <h2 class="heading heading--large">Lists</h2>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Unordered List</h3>
+          If the ordering of the items you want to display is relevant, use an ordered list. Otherwise use an unordered list.
+          <div class="flex-container section">
+            <div class="panel panel--large">
+              <h3 class="heading heading--medium">Ordered Lists</h3>
+              <ol class="list list--ordered">
+                <li class="list__item">This is the first list item.</li>
+                <li class="list__item">This is the second list item,<br>including a line break.</li>
+                <li class="list__item">This is the third rather long list item, which may take up multiple lines of space: 
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
+                  ultricies nec, pellentesque eu, pretium quis, sem. 
+                </li>
+                <li class="list__item">This is the fourth and final list item.</li>
+              </ol>
+              <pre><code class="language-markup">&lt;ol class="list list--ordered">
+  &lt;li class="list__item">...&lt;/li>
+  &lt;li class="list__item">...&lt;/li>
+&lt;/ol></code></pre>
             </div>
-            <div class="panel-body">
-              <pre>
-                <code class="language-markup">
-								&lt;ul>
-								  &lt;li>
-									Unordered list
-								  &lt;/li>
-								  &lt;li>
-									Lorem ipsum
-								  &lt;/li>
-								&lt;/ul>
-							c</code>
-              </pre>
+            <div class="panel panel--large">
+              <h3 class="heading heading--medium">Unordered Lists</h3>
+              <ul class="list list--unordered">
+                <li class="list__item">This is a list item.</li>
+                <li class="list__item">This is another list item,<br>including a line break.</li>
+                <li class="list__item">This is another rather long list item, which may take up multiple lines of space: 
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
+                  ultricies nec, pellentesque eu, pretium quis, sem. 
+                </li>
+                <li class="list__item">This is another list item.</li>
+              </ul>
+              <pre><code class="language-markup">&lt;ul class="list list--unordered">
+  &lt;li class="list__item">...&lt;/li>
+  &lt;li class="list__item">...&lt;/li>
+&lt;/ul></code></pre>
             </div>
           </div>
-          <xmp>
-            <ol>
-              <li>Unordered list ol / li</li>
-              <li>Lorem ispum</li>
-            </ol>
-          </xmp>
         </section>
         <section id="component-library__links">
           <h2>Links</h2>
