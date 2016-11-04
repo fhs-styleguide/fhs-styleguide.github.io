@@ -7,6 +7,8 @@ var reporter = require('postcss-reporter');
 var watch = require ('gulp-watch');
 var browserSync = require('browser-sync').create();
 
+gulp.task('default', ['sass']);
+
 gulp.task('sass', function() {
     var processorsPreSass = [
         stylelint({
