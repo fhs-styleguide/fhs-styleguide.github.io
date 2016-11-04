@@ -85,20 +85,6 @@ a {
   margin: 0 auto;
 }
 
-.note {
-    background-color: $color-background;
-    padding: 1em;
-    width: auto;
-    &:before {
-        color: $color-accent;
-        font-size: 1.333em;
-        content: "Note";
-        border-right: 1px solid $color-border;
-        padding-right: 0.5em;
-        margin-right: 0.5em;
-    }
-}
-
 .link_external {
     &:after {
         font-family: FontAwesome;
@@ -126,15 +112,6 @@ a {
 
 .heading--small {
     font-size: 1.333em;
-}
-
-.typography-headings {
-    background-color: $color-background;
-    padding: 0.5em;
-}
-
-.typography-headings__note {
-    margin-top: 0.5em;
 }
 
 /* Background Colors */
@@ -201,6 +178,24 @@ a {
   background-color: $color-background;
   border-radius: 0.2em;
   padding: 0.5em;
+}
+
+/* Note */
+
+.note {
+    background-color: $color-background;
+    border-radius: 0.2em;
+    padding: 1em;
+    margin: 0.5em 0;
+    width: auto;
+    &:before {
+        color: $color-accent;
+        font-size: 1.333em;
+        content: "Note";
+        border-right: 1px solid $color-border;
+        padding-right: 0.5em;
+        margin-right: 0.5em;
+    }
 }
 
 /* HELPER */
