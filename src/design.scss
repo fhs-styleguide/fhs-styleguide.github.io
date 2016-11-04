@@ -24,22 +24,21 @@ $color-text-link-visited: $mariner;
 $color-text-link-hover: darken($cinnabar, 10%);
 $color-border: black;
 
+$font-size-extra-extra-extra-large: 3.157em;
+$font-size-extra-extra-large: 2.369em;
+$font-size-extra-large: 1.777em;
+$font-size-large: 1.333em;
+$font-size-medium: 1em;
+$font-size-small: 0.75em;
+$font-size-extra-small: 0.563em;
+
 /* Common elements */
 
 body {
-    font-family: 'Open Sans', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     line-height: 1.45;
     color: $color-text;
-}
-
-small,
-.font_small {
-    font-size: .75em;
-}
-
-p {
-    margin-bottom: 1.3em;
 }
 
 a {
@@ -94,24 +93,65 @@ a {
 }
 
 /* Typography */
+.font-size-xxxl {
+  font-size: $font-size-extra-extra-extra-large;
+}
+
+.font-size-xxl {
+  font-size: $font-size-extra-extra-large;
+}
+
+.font-size-xl {
+  font-size: $font-size-extra-large;
+}
+
+.font-size-l {
+  font-size: $font-size-extra-large;
+}
+
+.font-size-m {
+  font-size: $font-size-medium;
+}
+
+.font-size-s {
+  font-size: $font-size-small;
+}
+
+.font-size-xs {
+  font-size: $font-size-extra-small;
+}
+
 .heading {
   color: $color-text-heading;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .heading--extra-large {
-  font-size: 3.157em;
+  font-size: $font-size-extra-extra-extra-large;
 }
 
 .heading--large {
-  font-size: 2.369em;
+  font-size: $font-size-extra-extra-large;
 }
 
 .heading--medium {
-  font-size: 1.777em;
+  font-size: $font-size-extra-large;
 }
 
 .heading--small {
-  font-size: 1.333em;
+  font-size: $font-size-large;
+}
+
+.typeface-body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.typeface-headings {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.glyph {
+  font-size: $font-size-extra-extra-extra-large;
 }
 
 /* Lists */
@@ -164,6 +204,13 @@ a {
 .panel{
   padding: 1.66666%;
   margin: 1.66666%;
+  border-radius: 0.2em;
+  border: 1px solid black;
+}
+/* TODO: Proposal: We could move the border stuff from panel to 
+ * panel--border, so we can have panels without borders as well.
+ */
+.panel--border {
   border-radius: 0.2em;
   border: 1px solid black;
 }

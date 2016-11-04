@@ -6,7 +6,7 @@
   <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="design.css">
   <link rel="stylesheet" type="text/css" href="prism.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 </head>
 
 <body>
@@ -67,32 +67,65 @@
       </section>
       <section id="brand-guide__typography">
         <h2 class="heading heading--large">Typography</h2>
-        <h3 class="heading heading--medium">Headings</h3>
-        <p>A default base size of 16px is assumed. A scale of 1.333 (Perfect Fourth) is used for increased clarity. Open Sans
-          is to be used throughout, as it TODO</p>
-        <div class="flex-container section ">
-          <div class="panel panel--large">
-            <h1 class="heading heading--extra-large">Heading level 1</h1>
-            <p>3.157em (50.15px) - Extra large</p>
-            <pre><code class="language-markup">&lt;h1 class="heading heading--extra-large">...&lt;/h1></code></pre>
+        <h3 class="heading heading--medium">Typefaces</h3>
+        <p class="note">Summary: Use Montserrat for headlines, and Open Sans for running text.</p>
+        <div class="flex-container section">
+          <div class="panel panel--border panel--large flex-container">
+            <div class="panel panel--medium">
+              <h4 class="heading heading--small">Open Sans</h4>
+              Open Sans is a sans-serif typeface, containing 897 characters, including the standard ISO Latin 1, 
+              Latin CE, greek and Cyrillic character sets. According to Google, Open Sans was designed "with an upright stress, open forms 
+              and a neutral, yet friendly apperance." Furthermore, it "was optimized for print, web, and mobile interfaces, and has excellent 
+              legibility characteristics in its letterforms." This makes Open Sans an obvious choice for large sections of 
+              running text, and thus is used everywhere except in headings and code snippets.
+            </div>
+            <div class="panel panel--small typeface-body">
+              <div class="glyph">Oo</div>
+              <div>0 1 2 3 4 5 6 7 8 9<br>
+                a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+                A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+              </div>
+            </div>
           </div>
-          <div class="panel panel--large">
-            <h2 class="heading heading--large">Heading level 2</h2>
-            <p>2.369em (37.904px) - Large</p>
-            <pre><code class="language-markup">&lt;h2 class="heading heading--large">...&lt;/h2></code></pre>
-          </div>
-          <div class="panel panel--large">
-            <h3 class="heading heading--medium">Heading level 3</h3>
-            <p>1.777em (28.432px) - Medium</p>
-            <pre><code class="language-markup">&lt;h3 class="heading heading--medium">...&lt;/h3></code></pre>
-          </div>
-          <div class="panel panel--large">
-            <h4 class="heading heading--small">Heading level 4</h4>
-            <p>1.333em (21.328px) - Small</p>
-            <pre><code class="language-markup">&lt;h4 class="heading heading--small">...&lt;/h4></code></pre>
+          <div class="panel panel--border panel--large flex-container">
+            <div class="panel panel--medium">
+              <h4 class="heading heading--small">Montserrat</h4>
+              Montserrat is an open-source sans-serif typeface, originally inspired by old posters and signs in the traditional 
+              neighborhoud of Buenos Aires called Montserrat. It was designed for good readability and is well-fitted for use in 
+              combination with Open Sans, underlining our corporate identity. Thus, Montserrat is used for all headlines.
+            </div>
+            <div class="panel panel--small typeface-headings">
+              <div class="glyph">Oo</div>
+              <div>0 1 2 3 4 5 6 7 8 9<br>
+                a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+                A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+              </div>
+            </div>
           </div>
         </div>
-        <p class="note">To keep a clear and simple structure, heading level 5 (h5) and 6 (h6) must not be used.</p>
+        <h3 class="heading heading--medium">Font Sizes</h3>
+        <p>A default base size of 16px is assumed. A scale of 1.333 (Perfect Fourth) is used for increased clarity. Running text 
+          should be in medium size, <a href="#component-library__headings">headings</a> are larger. Small font size is used, for example, for time stamps and 
+          legal information such as General Terms and Conditions.
+        </p>
+        <div class="flex-container section">
+          <div class="panel panel--large">
+            <p class="font-size-xxxl">Extra extra extra large - 3.157em (50.15px)</p>
+            <p class="font-size-xxl">Extra extra large - 2.369em (37.904px)</p>
+            <p class="font-size-xl">Extra large - 1.777em (28.432px)</p>
+            <p class="font-size-l">Large - 1.333em (21.328px)</p>
+            <p class="font-size-m">Medium - 1em (16px)</p>
+            <p class="font-size-s">Small - 0.75em (12px)</p>
+            <p class="font-size-xs">Extra small - 0.563em (9.008px)</p>
+            <pre><code class="language-markup">&lt;p class="font-size-xxxl">...&lt;/p>
+&lt;p class="font-size-xxl">...&lt;/p>
+&lt;p class="font-size-xl">...&lt;/p>
+&lt;p class="font-size-l">...&lt;/p>
+&lt;p class="font-size-m">...&lt;/p>
+&lt;p class="font-size-s">...&lt;/p>
+&lt;p class="font-size-xs">...&lt;/p></code></pre>
+          </div>
+        </div>
       </section>
       <section id="brand-guide__logo"></section>
       <section id="CSS">
@@ -102,7 +135,29 @@
       </section>
       <section id="component-library">
         <h1 class="heading heading--extra-large">Component Library</h1>
-        <section id="component-library__headings"></section>
+        <section id="component-library__headings">
+          <h3 class="heading heading--medium">Headings</h3>
+          <p>Take a look at the <a href="#brand-guide__typography">typography section</a> for additional information on font sizes.</p>
+          <div class="flex-container section ">
+            <div class="panel panel--large">
+              <h1 class="heading heading--extra-large">Heading level 1</h1>
+              <pre><code class="language-markup">&lt;h1 class="heading heading--extra-large">...&lt;/h1></code></pre>
+            </div>
+            <div class="panel panel--large">
+              <h2 class="heading heading--large">Heading level 2</h2>
+              <pre><code class="language-markup">&lt;h2 class="heading heading--large">...&lt;/h2></code></pre>
+            </div>
+            <div class="panel panel--large">
+              <h3 class="heading heading--medium">Heading level 3</h3>
+              <pre><code class="language-markup">&lt;h3 class="heading heading--medium">...&lt;/h3></code></pre>
+            </div>
+            <div class="panel panel--large">
+              <h4 class="heading heading--small">Heading level 4</h4>
+              <pre><code class="language-markup">&lt;h4 class="heading heading--small">...&lt;/h4></code></pre>
+            </div>
+          </div>
+          <p class="note">To keep a clear and simple structure, heading level 5 (h5) and 6 (h6) must not be used.</p>
+        </section>
         <section id="component-library__lists">
           <h2 class="heading heading--large">Lists</h2>
           If the ordering of the items you want to display is relevant, use an ordered list. Otherwise use an unordered list.
