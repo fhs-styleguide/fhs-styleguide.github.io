@@ -130,7 +130,24 @@
       <section id="brand-guide__logo"></section>
       <section id="CSS">
         <h2 class="heading heading--large">CSS Methodology</h2>
-        <section id="CSS__code-style">Code style</section>
+        <section id="CSS__code-style">
+          <h3 class="heading heading--medium">Code Style</h3>
+          <p>TODO: Stuff like indentation etc.</p>
+          <h4 class="heading heading--small">File Structure</h4>
+          <p>TODO: TO BE DONE</p>
+          <h4 class="heading heading--small">Pre-Processors</h4>
+          <p>The building process of the CSS files makes use of <a href="http://gulpjs.com/">gulp</a> 
+            and <a href="http://postcss.org/">PostCSS</a> and consists of several steps:
+            <ul class="list list--ordered">
+              <li class="list__item">The SCSS files are linted using <a href="https://www.npmjs.com/package/stylelint">stylelint</a>, 
+                enforcing consistent conventions throught all SCSS files.</li>
+              <li class="list__item">The SCSS files are converted to CSS files through the use of <a href="https://www.npmjs.com/package/gulp-sass">gulp-sass</a>, 
+                which is a wrapper around node-sass, which in turn utilizes libsass, which is a fast C/C++ port of the Sass CSS precompiler.</li>
+              <li class="list-item">The CSS files are now analyzed and modifed by <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> 
+                in order to automatically add vendor prefixes to the existing CSS.</li>
+            </ul>
+          </p>
+        </section>
         <section id="CSS__class-naming">Class Naming</section>
       </section>
       <section id="component-library">
