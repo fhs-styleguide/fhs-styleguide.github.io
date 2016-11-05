@@ -11,52 +11,57 @@
 
 <body>
 
-  <div class="container">
-    <nav class="container__nav">
-      <div class="fixed bg-color nav">
-        <a href="#brand-guide">Brand Guide</a>
-        <ul>
-          <li><a href="#brand-guide__introduction"> Introduction</a></li>
-          <li><a href="#brand-guide__colors">Colors</a></li>
-          <li><a href="#brand-guide__typography">Typography</a></li>
-          <li><a href="#brand-guide__logo">Logo</a></li>
-        </ul>
-        <a href="#CSS">CSS Methodology</a>
-        <ul>
-          <li><a href="#CSS__code-rules">Code Style Rules </a></li>
-          <li><a href="#CSS__class-nameing">Class Naming</a></li>
-        </ul>
-        <a href="#component-library">Component Library</a>
-        <ul>
-          <li><a href="#component-library__headings">Headings</a></li>
-          <li><a href="#component-library__lists">Lists</a></li>
-          <li><a href="#component-library__links">Links</a></li>
-          <li><a href="#component-library__buttons">Buttons</a></li>
-          <li><a href="#component-library__form-elements">Form Elements</a></li>
-          <li><a href="#component-library__media-blocks">Media Blocks</a></li>
-          <li><a href="#component-library__navigation">Navigation</a></li>
-        </ul>
-      </div>
-    </nav>
-    <section id="brand-guide" class="container__main">
-      <h1 class="heading heading--extra-large">Brand Guide</h1>
-      <section id="brand-guide__introduction">
-        <h2 class="heading heading--large">Introduction</h2>
-        <p>As Dabilu Sports is currently in the process of transforming from a small StartUp to a bigger corporation we felt
-          the need to develop a Styleguide for our brand. It consists of three main parts: the Brand Guide, the defined CSS
-          Methologies and the used Component Libraries.</p>
-        <h3 class="heading heading--medium">The aims of this Styleguide are:</h3>
-        <ul class="list list--disc">
-          <li>to provide our developers, designers and copywriters with a consistent structure and orientation when creating
-            new components for our brand-website
-            <li>to ensure that the public has the best possible experience when interacting with our website
-        </ul>
-      </section>
-      <section id="brand-guide__colors">
-        <h2 class="heading heading--large">Colors</h2>
-        <p>The Primary Brand Colors are used to represent Dabilu Sports in public and must reflect the Dabilu Sports brand.
-          These colors are part of our corporate identity. </p>
-        <div class="flex-container section">
+<div class="container">
+  <nav class="container__nav">
+    <div class="fixed bg-color nav">
+      <a href="#brand-guide">Brand Guide</a>
+      <ul>
+        <li><a href="#brand-guide__introduction"> Introduction</a></li>
+        <li><a href="#brand-guide__colors">Colors</a></li>
+        <li><a href="#brand-guide__typography">Typography</a></li>
+        <li><a href="#brand-guide__logo">Logo</a></li>
+      </ul>
+      <a href="#CSS">CSS Methodology</a>
+      <ul>
+        <li><a href="#CSS__code-rules">Code Style Rules </a></li>
+        <li><a href="#CSS__class-naming">Class Naming</a></li>
+      </ul>
+      <a href="#component-library">Component Library</a>
+      <ul>
+        <li><a href="#component-library__headings">Headings</a></li>
+        <li><a href="#component-library__lists">Lists</a></li>
+        <li><a href="#component-library__links">Links</a></li>
+        <li><a href="#component-library__buttons">Buttons</a></li>
+        <li><a href="#component-library__form-elements">Form Elements</a></li>
+        <li><a href="#component-library__media-blocks">Media Blocks</a></li>
+        <li><a href="#component-library__navigation">Navigation</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section id="brand-guide" class="container__main">
+    <h1 class="heading heading--extra-large">Brand Guide</h1>
+    <section id="brand-guide__introduction">
+      <h2 class="heading heading--large">Introduction</h2>
+      <p>As Dabilu Sports is currently in the process of transforming from a small StartUp to a bigger corporation we
+        felt
+        the need to develop a Styleguide for our brand. It consists of three main parts: the Brand Guide, the defined
+        CSS
+        Methologies and the used Component Libraries.</p>
+      <h3 class="heading heading--medium">The aims of this Styleguide are:</h3>
+      <ul class="list list--disc">
+        <li>to provide our developers, designers and copywriters with a consistent structure and orientation when
+          creating
+          new components for our brand-website
+        <li>to ensure that the public has the best possible experience when interacting with our website
+      </ul>
+    </section>
+    <section id="brand-guide__colors">
+      <h2 class="heading heading--large">Colors</h2>
+      <p>The Primary Brand Colors are used to represent Dabidu Sports in public and must reflect the Dabidu Sports
+        brand.
+        These colors are part of our corporate identity.</p>
+      <div class="section">
+        <div class="flex-container">
           <div class="item bg-color bg-color--primary panel panel--small">$pickled-bluewood: #2C3E50;</div>
           <div class="item bg-color bg-color--accent panel panel--small">$cinnabar: #E74C3C;</div>
           <div class="item bg-color panel panel--small">$porcelain: #ECF0F1;</div>
@@ -64,59 +69,319 @@
           <div class="item bg-color bg-color--mariner panel panel--small">$mariner: #2980B9;</div>
           <div class="item bg-color bg-color--mine-shaft panel panel--small">$mine-shaft: #333333;</div>
         </div>
-      </section>
-      <section id="brand-guide__typography">
-        <h2 class="heading heading--large">Typography</h2>
-        <h3 class="heading heading--medium">Typefaces</h3>
-        <p class="note">Summary: Use Montserrat for headlines, and Open Sans for running text.</p>
-        <div class="flex-container section">
-          <div class="panel panel--border panel--large flex-container">
-            <div class="panel panel--medium">
-              <h4 class="heading heading--small">Open Sans</h4>
-              Open Sans is a sans-serif typeface, containing 897 characters, including the standard ISO Latin 1, 
-              Latin CE, greek and Cyrillic character sets. According to Google, Open Sans was designed "with an upright stress, open forms 
-              and a neutral, yet friendly apperance." Furthermore, it "was optimized for print, web, and mobile interfaces, and has excellent 
-              legibility characteristics in its letterforms." This makes Open Sans an obvious choice for large sections of 
-              running text, and thus is used everywhere except in headings and code snippets.
-            </div>
-            <div class="panel panel--small typeface-body">
-              <div class="glyph">Oo</div>
-              <div>0 1 2 3 4 5 6 7 8 9<br>
-                a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
-                A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-              </div>
-            </div>
+        <pre>
+            <code class="language-css">
+.testclass {
+  backgroundcolor: $porcelain;
+}
+            </code>
+          </pre>
+      </div>
+      <p>
+        If colors are used in scss classes, they only applied as variables. All colors we are using has its own
+        variable.
+      </p>
+      <div class="section">
+        <div class="panel">
+          <h3 class="heading heading--small">Shadows</h3>
+          <div>
+            Use the SCSS variable $color-shadow, for shadows.
+                <pre>
+                  <code class="language-css">
+.shodow-class {
+  color: $color-shadow;
+  .
+  .
+  .
+}
+                  </code>
+                </pre>
           </div>
-          <div class="panel panel--border panel--large flex-container">
-            <div class="panel panel--medium">
-              <h4 class="heading heading--small">Montserrat</h4>
-              Montserrat is an open-source sans-serif typeface, originally inspired by old posters and signs in the traditional 
-              neighborhoud of Buenos Aires called Montserrat. It was designed for good readability and is well-fitted for use in 
-              combination with Open Sans, underlining our corporate identity. Thus, Montserrat is used for all headlines.
-            </div>
-            <div class="panel panel--small typeface-headings">
-              <div class="glyph">Oo</div>
-              <div>0 1 2 3 4 5 6 7 8 9<br>
-                a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
-                A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-              </div>
+        </div>
+        <div class="panel">
+          <h3 class="heading heading--small">Primary</h3>
+          <div>
+            Use the SCSS variable $color-primary, as primary color.
+              <pre>
+                <code class="language-css">
+.primary-class {
+  color: $color-primary;
+  .
+  .
+  .
+}
+                </code>
+              </pre>
+          </div>
+        </div>
+        <div class="panel">
+          <h3 class="heading heading--small">Accents</h3>
+          <div>
+            Use the SCSS variable $color-primary, for accents.
+              <pre>
+                <code class="language-css">
+.accent-class {
+  color: $color-accent;
+  .
+  .
+  .
+}
+                </code>
+              </pre>
+          </div>
+        </div>
+        <div class="panel">
+          <h3 class="heading heading--small">Background</h3>
+          <div>
+            Use the SCSS variable $color-background, for backgrounds.
+              <pre>
+                <code class="language-css">
+.background-class {
+  color: $color-background;
+  .
+  .
+  .
+}
+                </code>
+              </pre>
+          </div>
+        </div>
+        <div class="panel">
+          <h3 class="heading heading--small">Background Shade</h3>
+          <div>
+            Use the SCSS variable $color-background-shade, for background shade.
+            <pre>
+              <code class="language-css">
+.background-shade-class {
+  color: $color-background-shade;
+  .
+  .
+  .
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div class="panel">
+          <h3 class="heading heading--small">Inverted Background</h3>
+          <div>
+            Use the SCSS variable $color-background-invert, for backgrounds.
+            <pre>
+              <code class="language-css">
+.background-invert-class {
+  color: $color-background-invert;
+  .
+  .
+  .
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div class="panel">
+          <h3 class="heading heading--small">Text</h3>
+          <div>
+            Use the SCSS variable $color-text, for text.
+            <pre>
+              <code class="language-css">
+.text-class {
+  color: $color-text;
+  .
+  .
+  .
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div class="panel">
+          <h3 class="heading heading--small">Weak Text</h3>
+          <div>
+            Use the SCSS variable $color-text-weak, for weak text.
+            <pre>
+               <code class="language-css">
+ .text-weak-class {
+  color: $color-text-weak;
+  .
+  .
+  .
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div class="panel">
+          <h3 class="heading heading--small">Strong Text</h3>
+          <div>
+            Use the SCSS variable $color-text-strong, for strong text.
+            <pre>
+              <code class="language-css">
+.text-strong-class {
+  color: $color-text-strong;
+  .
+  .
+  .
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div class="panel">
+          <h3 class="heading heading--small">Headings</h3>
+          <div>
+            Use the SCSS variable $color-text-heading, for headings.
+            <pre>
+              <code class="language-css">
+.heading-class {
+  color: $color-text-heading;
+  .
+  .
+  .
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div class="panel">
+          <h3 class="heading heading--small">Inverted Text</h3>
+          <div>
+            Use the SCSS variable $color-text-invert, for inverted text.
+            <pre>
+              <code class="language-css">
+.text-invert-class {
+  color: $color-text-invert;
+  .
+  .
+  .
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div class="panel">
+          <h3 class="heading heading--small">Text Link</h3>
+          <div>
+            Use the SCSS variable $color-text-link, for links. For example:
+            <pre>
+              <code class="language-css">
+.text-link-class {
+  color: $color-text-link;
+  .
+  .
+  .
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div class="panel">
+          <h3 class="heading heading--small">Text Link Visited</h3>
+          <div>
+            Use the SCSS variable $color-text-link-visited, for links. For example:
+            <pre>
+              <code class="language-css">
+.text-link-visited-class {
+  color: $color-text-link-visited;
+  .
+  .
+  .
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div class="panel">
+          <h3 class="heading heading--small">Text Link Hover</h3>
+          <div>
+            Use the SCSS variable $color-text-link-hover, for links. For example:
+            <pre>
+              <code class="language-css">
+.text-link-hover-class {
+  color: $color-text-link-hover;
+  .
+  .
+  .
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div class="panel">
+          <h3 class="heading heading--small">Border</h3>
+          <div>
+            Use the SCSS variable $color-boder, for borders. For example:
+              <pre>
+                <code class="language-css">
+.boder-class {
+  color: $color-boder;
+  .
+  .
+  .
+}
+                </code>
+              </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="brand-guide__typography">
+      <h2 class="heading heading--large">Typography</h2>
+      <h3 class="heading heading--medium">Typefaces</h3>
+      <p class="note">Summary: Use Montserrat for headlines, and Open Sans for running text.</p>
+      <div class="flex-container section">
+        <div class="panel panel--border panel--large flex-container">
+          <div class="panel panel--medium">
+            <h4 class="heading heading--small">Open Sans</h4>
+            Open Sans is a sans-serif typeface, containing 897 characters, including the standard ISO Latin 1,
+            Latin CE, greek and Cyrillic character sets. According to Google, Open Sans was designed "with an upright
+            stress, open forms
+            and a neutral, yet friendly apperance." Furthermore, it "was optimized for print, web, and mobile
+            interfaces, and has excellent
+            legibility characteristics in its letterforms." This makes Open Sans an obvious choice for large sections of
+            running text, and thus is used everywhere except in headings and code snippets.
+          </div>
+          <div class="panel panel--small typeface-body">
+            <div class="glyph">Oo</div>
+            <div>0 1 2 3 4 5 6 7 8 9<br>
+              a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+              A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
             </div>
           </div>
         </div>
-        <h3 class="heading heading--medium">Font Sizes</h3>
-        <p>A default base size of 16px is assumed. A scale of 1.333 (Perfect Fourth) is used for increased clarity. Running text 
-          should be in medium size, <a href="#component-library__headings">headings</a> are larger. Small font size is used, for example, for time stamps and 
-          legal information such as General Terms and Conditions.
-        </p>
-        <div class="flex-container section">
-          <div class="panel panel--large">
-            <p class="font-size-xxxl">Extra extra extra large - 3.157em (50.15px)</p>
-            <p class="font-size-xxl">Extra extra large - 2.369em (37.904px)</p>
-            <p class="font-size-xl">Extra large - 1.777em (28.432px)</p>
-            <p class="font-size-l">Large - 1.333em (21.328px)</p>
-            <p class="font-size-m">Medium - 1em (16px)</p>
-            <p class="font-size-s">Small - 0.75em (12px)</p>
-            <p class="font-size-xs">Extra small - 0.563em (9.008px)</p>
+        <div class="panel panel--border panel--large flex-container">
+          <div class="panel panel--medium">
+            <h4 class="heading heading--small">Montserrat</h4>
+            Montserrat is an open-source sans-serif typeface, originally inspired by old posters and signs in the
+            traditional
+            neighborhoud of Buenos Aires called Montserrat. It was designed for good readability and is well-fitted for
+            use in
+            combination with Open Sans, underlining our corporate identity. Thus, Montserrat is used for all headlines.
+          </div>
+          <div class="panel panel--small typeface-headings">
+            <div class="glyph">Oo</div>
+            <div>0 1 2 3 4 5 6 7 8 9<br>
+              a b c d e f g h i j k l m n o p q r s t u v w x y z<br>
+              A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="heading heading--medium">Font Sizes</h3>
+      <p>A default base size of 16px is assumed. A scale of 1.333 (Perfect Fourth) is used for increased clarity.
+        Running text
+        should be in medium size, <a href="#component-library__headings">headings</a> are larger. Small font size is
+        used, for example, for time stamps and
+        legal information such as General Terms and Conditions.
+      </p>
+      <div class="flex-container section">
+        <div class="panel panel--large">
+          <p class="font-size-xxxl">Extra extra extra large - 3.157em (50.15px)</p>
+          <p class="font-size-xxl">Extra extra large - 2.369em (37.904px)</p>
+          <p class="font-size-xl">Extra large - 1.777em (28.432px)</p>
+          <p class="font-size-l">Large - 1.333em (21.328px)</p>
+          <p class="font-size-m">Medium - 1em (16px)</p>
+          <p class="font-size-s">Small - 0.75em (12px)</p>
+          <p class="font-size-xs">Extra small - 0.563em (9.008px)</p>
             <pre><code class="language-markup">&lt;p class="font-size-xxxl">...&lt;/p>
 &lt;p class="font-size-xxl">...&lt;/p>
 &lt;p class="font-size-xl">...&lt;/p>
@@ -124,119 +389,243 @@
 &lt;p class="font-size-m">...&lt;/p>
 &lt;p class="font-size-s">...&lt;/p>
 &lt;p class="font-size-xs">...&lt;/p></code></pre>
+        </div>
+      </div>
+    </section>
+    <section id="brand-guide__logo"></section>
+    <section id="CSS">
+      <h2 class="heading heading--large">CSS Methodology</h2>
+      <section id="CSS__code-style">
+        <h3 class="heading heading--medium">Code Style</h3>
+        <p>TODO: Stuff like indentation etc.</p>
+        <h4 class="heading heading--small">File Structure</h4>
+        <p>TODO: TO BE DONE</p>
+        <h4 class="heading heading--small">Pre-Processors</h4>
+        <p>The building process of the CSS files makes use of <a href="http://gulpjs.com/">gulp</a>
+          and <a href="http://postcss.org/">PostCSS</a> and consists of several steps:
+        <ul class="list list--ordered">
+          <li class="list__item">The SCSS files are linted using <a href="https://www.npmjs.com/package/stylelint">stylelint</a>,
+            enforcing consistent conventions throught all SCSS files.
+          </li>
+          <li class="list__item">The SCSS files are converted to CSS files through the use of <a
+            href="https://www.npmjs.com/package/gulp-sass">gulp-sass</a>,
+            which is a wrapper around node-sass, which in turn utilizes libsass, which is a fast C/C++ port of the Sass
+            CSS precompiler.
+          </li>
+          <li class="list-item">The CSS files are now analyzed and modifed by <a
+            href="https://github.com/postcss/autoprefixer">Autoprefixer</a>
+            in order to automatically add vendor prefixes to the existing CSS.
+          </li>
+        </ul>
+        </p>
+      </section>
+      <section id="CSS__class-naming">
+        <h3 class="heading heading--medium">Class Naming</h3>
+        <div>
+          Our styleguide follows the Block, Element, Modifier Architecture.
+          So every CSS class has to named after the following rules.
+          This section is a citation from: <a href="http://getbem.com/naming/">http://getbem.com/naming/</a>
+        </div>
+        <h4 class="heading heading--small">Block</h4>
+        Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other, semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation (such as controllers or models) can be blocks as well.
+        <div class="section">
+          <div class="panel">
+            <h4 class="heading heading--small">Naming</h4>
+            Block names may consist of Latin letters, digits, and dashes. To form a CSS class, add a short prefix for namespacing: .block
+          </div>
+          <div class="panel">
+            <h4 class="heading heading--small">HTML</h4>
+            Any DOM node can be a block if it accepts a class name.
+            <pre><code class="language-markup">&lt;div class="block">...&lt;/div></code></pre>
+          </div>
+          <div class="panel">
+            <h4 class="heading heading--small">CSS</h4>
+            Block names may consist of Latin letters, digits, and dashes. To form a CSS class, add a short prefix for namespacing: .block
+            <pre><code class="language-css">.block {
+  color: $color-primary;
+}</code></pre>
+          </div>
+        </div>
+        <h4 class="heading heading--small">Element</h4>
+        Parts of a block and have no standalone meaning. Any element is semantically tied to its block.
+        <div class="section">
+          <div class="panel">
+            <h4 class="heading heading--small">Naming</h4>
+            Element names may consist of Latin letters, digits, dashes and underscores. CSS class is formed as block name plus two underscores plus element name: .block__elem
+          </div>
+          <div class="panel">
+            <h4 class="heading heading--small">HTML</h4>
+            Any DOM node within a block can be an element. Within a given block, all elements are semantically equal.
+            <pre><code class="language-markup">&lt;div class="block">
+  ...
+  &lt;span class="block__elem">...&lt;/span>
+&lt;/div></code></pre>
+          </div>
+          <div class="panel">
+            <h4 class="heading heading--small">CSS</h4>
+            <ul class="list list--unordered">
+              <li class="list__item">
+                Use class name selector only
+              </li>
+              <li class="list__item">
+                No tag name or ids
+              </li>
+              <li class="list__item">
+                No dependency on other blocks/elements on a page
+              </li>
+            </ul>
+            <p>Good</p>
+            <pre><code class="language-css">.block__elem {
+  color: #042;
+}</code></pre>
+            <p>Bad</p>
+          <pre><code class="language-css">.block .block__elem {
+  color: #042;
+}
+
+div.block__elem {
+  color: #042;
+}</code></pre>
+          </div>
+
+        </div>
+        <h4 class="heading heading--small">Modifier</h4>
+        Flags on blocks or elements. Use them to change appearance, behavior or state.
+        <div class="section">
+          <div class="panel">
+            <h4 class="heading heading--small">Naming</h4>
+            Modifier names may consist of Latin letters, digits, dashes and underscores. CSS class is formed as block’s or element’s name plus two dashes: .block--mod or .block__elem--mod and .block--color-black with .block--color-red. Spaces in complicated modifiers are replaced by dash.
+          </div>
+          <div class="panel">
+            <h4 class="heading heading--small">HTML</h4>
+            Modifier is an extra class name which you add to a block/element DOM node. Add modifier classes only to blocks/elements they modify, and keep the original class:
+            <p>Good</p>
+            <pre><code class="language-markup">&lt;div class="block block--mod">
+  ...
+&lt;/div>
+&lt;div class="block block--size-big block--shadow-yes">
+  ...
+&lt;/div></code></pre>
+            <p>Bad</p>
+            <pre><code class="language-markup">&lt;div class="block--mod">
+  ...
+&lt;/div></code></pre>
+          </div>
+          <div class="panel">
+            <h4 class="heading heading--small">CSS</h4>
+            Use modifier class name as selector:
+            <pre><code class="language-css">.block--hidden {
+  .
+  .
+  .
+}</code></pre>
+            To alter elements based on a block-level modifier:
+            <pre><code class="language-css">.block--mod .block__elem {
+  .
+  .
+  .
+}</code></pre>
+            Element modifier:
+            <pre><code class="language-css">.block__elem--mod {
+  .
+  .
+  .
+}</code></pre>
           </div>
         </div>
       </section>
-      <section id="brand-guide__logo"></section>
-      <section id="CSS">
-        <h2 class="heading heading--large">CSS Methodology</h2>
-        <section id="CSS__code-style">
-          <h3 class="heading heading--medium">Code Style</h3>
-          <p>TODO: Stuff like indentation etc.</p>
-          <h4 class="heading heading--small">File Structure</h4>
-          <p>TODO: TO BE DONE</p>
-          <h4 class="heading heading--small">Pre-Processors</h4>
-          <p>The building process of the CSS files makes use of <a href="http://gulpjs.com/">gulp</a> 
-            and <a href="http://postcss.org/">PostCSS</a> and consists of several steps:
-            <ul class="list list--ordered">
-              <li class="list__item">The SCSS files are linted using <a href="https://www.npmjs.com/package/stylelint">stylelint</a>, 
-                enforcing consistent conventions throught all SCSS files.</li>
-              <li class="list__item">The SCSS files are converted to CSS files through the use of <a href="https://www.npmjs.com/package/gulp-sass">gulp-sass</a>, 
-                which is a wrapper around node-sass, which in turn utilizes libsass, which is a fast C/C++ port of the Sass CSS precompiler.</li>
-              <li class="list-item">The CSS files are now analyzed and modifed by <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> 
-                in order to automatically add vendor prefixes to the existing CSS.</li>
-            </ul>
-          </p>
-        </section>
-        <section id="CSS__class-naming">Class Naming</section>
-      </section>
-      <section id="component-library">
-        <h1 class="heading heading--extra-large">Component Library</h1>
-        <section id="component-library__headings">
-          <h3 class="heading heading--medium">Headings</h3>
-          <p>Take a look at the <a href="#brand-guide__typography">typography section</a> for additional information on font sizes.</p>
-          <div class="flex-container section ">
-            <div class="panel panel--large">
-              <h1 class="heading heading--extra-large">Heading level 1</h1>
-              <pre><code class="language-markup">&lt;h1 class="heading heading--extra-large">...&lt;/h1></code></pre>
-            </div>
-            <div class="panel panel--large">
-              <h2 class="heading heading--large">Heading level 2</h2>
-              <pre><code class="language-markup">&lt;h2 class="heading heading--large">...&lt;/h2></code></pre>
-            </div>
-            <div class="panel panel--large">
-              <h3 class="heading heading--medium">Heading level 3</h3>
-              <pre><code class="language-markup">&lt;h3 class="heading heading--medium">...&lt;/h3></code></pre>
-            </div>
-            <div class="panel panel--large">
-              <h4 class="heading heading--small">Heading level 4</h4>
-              <pre><code class="language-markup">&lt;h4 class="heading heading--small">...&lt;/h4></code></pre>
-            </div>
+    </section>
+    <section id="component-library">
+      <h1 class="heading heading--extra-large">Component Library</h1>
+      <section id="component-library__headings">
+        <h3 class="heading heading--medium">Headings</h3>
+        <p>Take a look at the <a href="#brand-guide__typography">typography section</a> for additional information on
+          font sizes.</p>
+        <div class="flex-container section ">
+          <div class="panel panel--large">
+            <h1 class="heading heading--extra-large">Heading level 1</h1>
+            <pre><code class="language-markup">&lt;h1 class="heading heading--extra-large">...&lt;/h1></code></pre>
           </div>
-          <p class="note">To keep a clear and simple structure, heading level 5 (h5) and 6 (h6) must not be used.</p>
-        </section>
-        <section id="component-library__lists">
-          <h2 class="heading heading--large">Lists</h2>
-          If the ordering of the items you want to display is relevant, use an ordered list. Otherwise use an unordered list.
-          <div class="flex-container section">
-            <div class="panel panel--large">
-              <h3 class="heading heading--medium">Ordered Lists</h3>
-              <ol class="list list--ordered">
-                <li class="list__item">This is the first list item.</li>
-                <li class="list__item">This is the second list item,<br>including a line break.</li>
-                <li class="list__item">This is the third rather long list item, which may take up multiple lines of space: 
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
-                  ultricies nec, pellentesque eu, pretium quis, sem. 
-                </li>
-                <li class="list__item">This is the fourth and final list item.</li>
-              </ol>
+          <div class="panel panel--large">
+            <h2 class="heading heading--large">Heading level 2</h2>
+            <pre><code class="language-markup">&lt;h2 class="heading heading--large">...&lt;/h2></code></pre>
+          </div>
+          <div class="panel panel--large">
+            <h3 class="heading heading--medium">Heading level 3</h3>
+            <pre><code class="language-markup">&lt;h3 class="heading heading--medium">...&lt;/h3></code></pre>
+          </div>
+          <div class="panel panel--large">
+            <h4 class="heading heading--small">Heading level 4</h4>
+            <pre><code class="language-markup">&lt;h4 class="heading heading--small">...&lt;/h4></code></pre>
+          </div>
+        </div>
+        <p class="note">To keep a clear and simple structure, heading level 5 (h5) and 6 (h6) must not be used.</p>
+      </section>
+      <section id="component-library__lists">
+        <h2 class="heading heading--large">Lists</h2>
+        If the ordering of the items you want to display is relevant, use an ordered list. Otherwise use an unordered
+        list.
+        <div class="flex-container section">
+          <div class="panel panel--large">
+            <h3 class="heading heading--medium">Ordered Lists</h3>
+            <ol class="list list--ordered">
+              <li class="list__item">This is the first list item.</li>
+              <li class="list__item">This is the second list item,<br>including a line break.</li>
+              <li class="list__item">This is the third rather long list item, which may take up multiple lines of space:
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                massa.
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                ultricies nec, pellentesque eu, pretium quis, sem.
+              </li>
+              <li class="list__item">This is the fourth and final list item.</li>
+            </ol>
               <pre><code class="language-markup">&lt;ol class="list list--ordered">
   &lt;li class="list__item">...&lt;/li>
   &lt;li class="list__item">...&lt;/li>
 &lt;/ol></code></pre>
-            </div>
-            <div class="panel panel--large">
-              <h3 class="heading heading--medium">Unordered Lists</h3>
-              <ul class="list list--unordered">
-                <li class="list__item">This is a list item.</li>
-                <li class="list__item">This is another list item,<br>including a line break.</li>
-                <li class="list__item">This is another rather long list item, which may take up multiple lines of space: 
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
-                  ultricies nec, pellentesque eu, pretium quis, sem. 
-                </li>
-                <li class="list__item">This is another list item.</li>
-              </ul>
+          </div>
+          <div class="panel panel--large">
+            <h3 class="heading heading--medium">Unordered Lists</h3>
+            <ul class="list list--unordered">
+              <li class="list__item">This is a list item.</li>
+              <li class="list__item">This is another list item,<br>including a line break.</li>
+              <li class="list__item">This is another rather long list item, which may take up multiple lines of space:
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                massa.
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                ultricies nec, pellentesque eu, pretium quis, sem.
+              </li>
+              <li class="list__item">This is another list item.</li>
+            </ul>
               <pre><code class="language-markup">&lt;ul class="list list--unordered">
   &lt;li class="list__item">...&lt;/li>
   &lt;li class="list__item">...&lt;/li>
 &lt;/ul></code></pre>
-            </div>
           </div>
-        </section>
-        <section id="component-library__links">
-          <h2>Links</h2>
-          <a href="#">Internal link</a><br>
-          <a href="#" class="link_external">External link</a>
-          <xmp>
-            <a href="#">Internal link</a>
-            <a href="#" class="link_external">External link</a>
-          </xmp>
-        </section>
-        <section id="component-library__buttons">
-          <h2>Buttons</h2>
-        </section>
-        <section id="component-library__form-elements"></section>
-        <section id="component-library__media-blocks"></section>
-        <section id="component-library__navigation"></section>
+        </div>
       </section>
+      <section id="component-library__links">
+        <h2 class="heading heading--medium">Links</h2>
+        <a href="#">Internal link</a><br>
+        <a href="#" class="link_external">External link</a>
+        <xmp>
+          <a href="#">Internal link</a>
+          <a href="#" class="link_external">External link</a>
+        </xmp>
+      </section>
+      <section id="component-library__buttons">
+        <h2>Buttons</h2>
+      </section>
+      <section id="component-library__form-elements"></section>
+      <section id="component-library__media-blocks"></section>
+      <section id="component-library__navigation"></section>
     </section>
-  </div>
+  </section>
+</div>
 
-  <script src="https://use.fontawesome.com/8558f65789.js"></script>
-  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-  <script src="prism.js"></script>
+<script src="https://use.fontawesome.com/8558f65789.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<script src="prism.js"></script>
 </body>
 
 </html>
