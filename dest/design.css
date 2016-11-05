@@ -8,12 +8,12 @@ body {
   line-height: 1.45;
   color: black; }
 
-a {
+.link {
   text-decoration: none;
-  color: #E74C3C; }
-  a:visited {
-    color: #2980B9; }
-  a:hover {
+  color: #2980B9; }
+  .link:visited {
+    color: #E74C3C; }
+  .link:hover {
     color: #d62c1a;
     text-decoration: underline; }
 
@@ -152,6 +152,106 @@ a {
 
 .panel--large {
   width: 90%; }
+
+/* Buttons */
+.btn {
+  background: #ECF0F1;
+  border-radius: 0.2em;
+  color: black;
+  font-size: 1.333em;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  border: solid black 1px;
+  text-decoration: none;
+  outline-width: 0px;
+  outline: none; }
+
+.btn:hover {
+  cursor: pointer;
+  background: #cfd9db;
+  color: black;
+  border: solid black 1px;
+  text-decoration: none;
+  outline-width: 0px;
+  outline: none; }
+
+.btn--primary {
+  background: #2C3E50;
+  border: solid #1a252f 1px;
+  color: #ECF0F1; }
+
+.btn--primary:hover {
+  background: #1a252f;
+  border: solid #080b0e 1px;
+  color: #ECF0F1; }
+
+.btn--success {
+  background: #4D9E4F;
+  border: solid #3c7c3e 1px;
+  color: #ECF0F1; }
+
+.btn--success:hover {
+  background: #3c7c3e;
+  border: solid #2c592d 1px;
+  color: #ECF0F1; }
+
+.btn--info {
+  background: #14C7C4;
+  border: solid #0f9996 1px;
+  color: #ECF0F1; }
+
+.btn--info:hover {
+  background: #0f9996;
+  border: solid #0b6a69 1px;
+  color: #ECF0F1; }
+
+.btn--warning {
+  background: #DBB501;
+  border: solid #a88b01 1px;
+  color: #ECF0F1; }
+
+.btn--warning:hover {
+  background: #a88b01;
+  border: solid #756101 1px;
+  color: #ECF0F1; }
+
+.btn--danger {
+  background: #E74C3C;
+  border: solid #d62c1a 1px;
+  color: #ECF0F1; }
+
+.btn--danger:hover {
+  background: #d62c1a;
+  border: solid #a82315 1px;
+  color: #ECF0F1; }
+
+.btn--xs {
+  font-size: 0.563em;
+  padding: 0.5em 1em; }
+
+.btn--s {
+  font-size: 0.75em;
+  padding: 0.5em 1em; }
+
+.btn--m {
+  font-size: 1em;
+  padding: 0.5em 1em; }
+
+.btn--l {
+  font-size: 1.333em;
+  padding: 0.5em 1em; }
+
+.btn--xl {
+  font-size: 1.777em;
+  padding: 0.5em 1em; }
+
+.btn--xxl {
+  font-size: 2.369em;
+  padding: 0.5em 1em; }
+
+.btn--xxxl {
+  font-size: 3.157em;
+  padding: 0.5em 1em; }
 
 /* FLEX */
 .flex-container {
