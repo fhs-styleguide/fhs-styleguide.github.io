@@ -19,10 +19,14 @@ $color-text-weak: $mine-shaft;
 $color-text-strong: black;
 $color-text-heading: $pickled-bluewood;
 $color-text-invert: black;
-$color-text-link: $cinnabar;
-$color-text-link-visited: $mariner;
+$color-text-link: $mariner;
+$color-text-link-visited: $cinnabar;
 $color-text-link-hover: darken($cinnabar, 10%);
 $color-border: black;
+$color-success: #4D9E4F;
+$color-info: #14C7C4;
+$color-warning: #DBB501;
+$color-danger: $color-accent;
 
 $font-size-extra-extra-extra-large: 3.157em;
 $font-size-extra-extra-large: 2.369em;
@@ -41,7 +45,7 @@ body {
     color: $color-text;
 }
 
-a {
+.link {
     text-decoration: none;
     color: $color-text-link;
     &:visited {
@@ -225,6 +229,119 @@ a {
 
 .panel--large{
   width: 90%;
+}
+
+/* Buttons */
+.btn {
+  background: $color-background;
+  border-radius: 0.2em;
+  color: $color-text;
+  font-size: 1.333em;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  border: solid $color-border 1px;
+  text-decoration: none;
+  outline-width: 0px;
+  outline: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: darken($color-background,10%);
+  color: $color-text;
+  border: solid $color-border 1px;
+  text-decoration: none;
+  outline-width: 0px;
+  outline: none;
+}
+
+.btn--primary {
+  background: $color-primary;
+  border: solid darken($color-primary,10%) 1px;
+  color: $color-background;
+}
+
+.btn--primary:hover {
+  background: darken($color-primary,10%);
+  border: solid darken($color-primary,20%) 1px;
+  color: $color-background;
+}
+
+.btn--success {
+  background: $color-success;
+  border: solid darken($color-success,10%) 1px;
+  color: $color-background;
+}
+
+.btn--success:hover {
+  background: darken($color-success,10%);
+  border: solid darken($color-success,20%) 1px;
+  color: $color-background;
+}
+
+.btn--info {
+  background: $color-info;
+  border: solid darken($color-info,10%) 1px;
+  color: $color-background;
+}
+
+.btn--info:hover {
+  background: darken($color-info,10%);
+  border: solid darken($color-info,20%) 1px;
+  color: $color-background;
+}
+
+.btn--warning {
+  background: $color-warning;
+  border: solid darken($color-warning,10%) 1px;
+  color: $color-background;
+}
+
+.btn--warning:hover {
+  background: darken($color-warning,10%);
+  border: solid darken($color-warning,20%) 1px;
+  color: $color-background;
+}
+
+.btn--danger {
+  background: $color-danger;
+  border: solid darken($color-danger,10%) 1px;
+  color: $color-background;
+}
+
+.btn--danger:hover {
+  background: darken($color-danger,10%);
+  border: solid darken($color-danger,20%) 1px;
+  color: $color-background;
+}
+
+.btn--xs{
+  font-size: 0.563em;
+  padding: 0.5em 1em;
+}
+.btn--s{
+  font-size: 0.75em;
+  padding: 0.5em 1em;
+}
+.btn--m{
+  font-size: 1em;
+  padding: 0.5em 1em;
+}
+.btn--l{
+  font-size: 1.333em;
+  padding: 0.5em 1em;
+}
+.btn--xl{
+  font-size: 1.777em;
+  padding: 0.5em 1em;
+}
+.btn--xxl{
+  font-size: 2.369em;
+  padding: 0.5em 1em;
+}
+.btn--xxxl{
+  font-size: 3.157em;
+  padding: 0.5em 1em;
 }
 
 /* FLEX */
