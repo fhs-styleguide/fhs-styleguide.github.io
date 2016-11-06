@@ -27,7 +27,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
+  padding: 1.6666%;
   width: 100%; }
 
 .container__nav {
@@ -70,9 +70,16 @@ body {
 .font-size-xs {
   font-size: 0.563em; }
 
+.font-weight-normal {
+  font-weight: 400; }
+
+.font-weight-bold {
+  font-weight: 700; }
+
 .heading {
   color: #2C3E50;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  text-indent: 0; }
 
 .heading--extra-large {
   font-size: 3.157em; }
@@ -86,10 +93,14 @@ body {
 .heading--small {
   font-size: 1.333em; }
 
-.typeface-body {
+.panel--borderless {
+  padding: 1.66666%;
+  margin: 1.66666%; }
+
+.typeface__body {
   font-family: 'Open Sans', sans-serif; }
 
-.typeface-headings {
+.typeface__headings {
   font-family: 'Montserrat', sans-serif; }
 
 .glyph {
@@ -98,41 +109,15 @@ body {
 /* Logo */
 .logo--big,
 .logo--minClearSpace {
-  width: 300px; }
-
-.logo--medium {
-  width: 180px; }
+  display: block;
+  height: auto;
+  width: 300px;
+  margin: 0 auto; }
 
 .logo--xtrasmall {
-  width: 90px; }
-
-.flex-container.logo--colors {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start; }
-
-.div--rect {
-  margin-right: 1em;
-  width: 142px; }
-
-.rect {
-  height: 50px;
-  text-align: center;
-  width: 142px; }
-
-.rect--pickled-bluewood {
-  background: #2C3E50; }
-
-.rect--curious-blue {
-  background: #3498DB; }
-
-.rect--cinnabar {
-  background: #E74C3C; }
+  display: block;
+  width: 90px;
+  margin: 0 auto; }
 
 .logo--inpropper1 {
   height: 150px;
@@ -177,17 +162,13 @@ body {
 .bg-color--mine-shaft {
   background-color: #333333; }
 
+.text-color--inverted {
+  color: white; }
+
 /* Panel */
 .panel {
   padding: 1.66666%;
   margin: 1.66666%;
-  border-radius: 0.2em;
-  border: 1px solid black; }
-
-/* TODO: Proposal: We could move the border stuff from panel to 
- * panel--border, so we can have panels without borders as well.
- */
-.panel--border {
   border-radius: 0.2em;
   border: 1px solid black; }
 
@@ -321,8 +302,9 @@ body {
 .note {
   background-color: #ECF0F1;
   border-radius: 0.2em;
-  padding: 1em;
+  padding: 1em 1em 1em 2em;
   margin: 0.5em 0;
+  text-indent: -1em;
   width: auto; }
   .note:before {
     color: #E74C3C;
