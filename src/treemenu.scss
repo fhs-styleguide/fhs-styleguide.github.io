@@ -1,0 +1,97 @@
+@import 'design';
+
+$font-size-nav-big: 1.2em;
+$font-size-nav-small: .9em;
+$nav-icon-col: #b7bcc2;
+$logo-nav-size: 200px;
+
+nav {
+  border: 1px solid $porcelain;
+}
+
+.fixed {
+  padding: 0;
+}
+
+.nav-container {
+  margin-bottom: 2em;
+
+  .logo--medium {
+    display: block;
+    margin: 0 auto;
+    padding: 1em;
+    width: $logo-nav-size;
+  }
+
+  .p--nav {
+    font-size: $font-size-small;
+    text-align: center;
+  }
+}
+
+
+.main-category {
+  border-top: 1px solid $porcelain;
+  cursor: pointer;
+  font-size: $font-size-nav-big;
+  font-weight: bold;
+  min-height: 3em;
+
+  p {
+    padding: .8em 0 .8em 1em;
+  }
+
+  ul {
+    background: $porcelain;
+    border-top: 1px solid $porcelain;
+    display: none;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-bottom: .5em;
+    padding-left: 1.5em;
+    padding-top: .5em;
+  }
+
+  a {
+    color: $mariner;
+    display: block;
+    font-size: $font-size-nav-small;
+    line-height: 2em;
+    text-decoration: none;
+
+    &:hover {
+      color: $cinnabar;
+    }
+  }
+
+  .active {
+    color: $cinnabar;
+  }
+}
+
+.last {
+  border-bottom: 1px solid $porcelain;
+}
+
+.nav-icon {
+  color: $nav-icon-col;
+  float: right;
+  font-size: .5em;
+  padding-right: 3em;
+  padding-top: 1em;
+}
+
+.nav-icon--open {
+  &::after {
+    content: '\25BC';
+  }
+}
+
+.nav-icon--close {
+  &::after {
+    content: '\25B2';
+  }
+}
+
+
+

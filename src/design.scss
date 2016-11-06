@@ -18,51 +18,67 @@ $color-text: black;
 $color-text-weak: $mine-shaft;
 $color-text-strong: black;
 $color-text-heading: $pickled-bluewood;
-$color-text-invert: black;
-$color-text-link: $cinnabar;
-$color-text-link-visited: $mariner;
+$color-text-invert: white;
+$color-text-link: $mariner;
+$color-text-link-visited: $cinnabar;
 $color-text-link-hover: darken($cinnabar, 10%);
 $color-border: black;
-$input-height-small: 20px;
-$input-height-medium: 40px;
-$input-height-large: 50px;
-$input-height-xlarge: 60px;
+<<<<<<< HEAD
 $input-radius: 4px;
 $input-padding: 10px 16px;
-$textarea-height-small: 40px;
-$textarea-height-medium: 80px;
-$textarea-height-large: 120px;
-$textarea-height-xlarge: 200px;
 
+
+=======
+$color-success: #4D9E4F;
+$color-info: #14C7C4;
+$color-warning: #DBB501;
+$color-danger: $color-accent;
+
+$font-size-extra-extra-extra-large: 3.157em;
+$font-size-extra-extra-large: 2.369em;
+$font-size-extra-large: 1.777em;
+$font-size-large: 1.333em;
+$font-size-medium: 1em;
+$font-size-small: 0.75em;
+$font-size-extra-small: 0.563em;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$rect-width: 142px;
+$rect-height: 50px;
+
+$logo-big-width: 300px;
+$logo-medium-width: 180px;
+$logo-xtrasmall-width: 90px;
+>>>>>>> f0bfd3f79766dd304ed7f96da027dd99a08ccf20
 
 /* Common elements */
 
 body {
-    font-family: 'Open Sans', serif;
-    font-weight: 400;
-    line-height: 1.45;
-    color: $color-text;
+  color: $color-text;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: $font-weight-normal;
+  line-height: 1.45;
+  margin: 0;
 }
 
-small,
-.font_small {
-    font-size: .75em;
+.link {
+  color: $color-text-link;
+  text-decoration: none;
+
+  &:visited {
+    color: $color-text-link-visited;
+  }
+
+  &:hover {
+    color: $color-text-link-hover;
+    text-decoration: underline;
+  }
 }
 
-p {
-    margin-bottom: 1.3em;
-}
-
-a {
-    text-decoration: none;
-    color: $color-text-link;
-    &:visited {
-        color: $color-text-link-visited;
-    }
-    &:hover {
-        color: $color-text-link-hover;
-        text-decoration: underline;
-    }
+.paragraph {
+  margin: 1em 0;
 }
 
 /* Introduction */
@@ -74,60 +90,161 @@ a {
 /* Classes */
 
 .container {
-    display: -webkit-flex;
-    display: flex;
-    padding: 1.6666%;
-    width: 100%;
+  display: flex;
+  padding: 0;
+  width: 100%;
 }
 
-.container__nav{
+.container__nav {
   width: 25%;
 }
 
-.container__main{
+.container__main {
   width: 75%;
   padding: 1.6666%;
 }
 
-.nav{
+.nav {
   width: 25%;
   border-radius: 0.2em;
   padding: 1.6666%;
   margin: 0 auto;
 }
 
-.link_external {
+.link--external {
   &:after {
-    font-family: FontAwesome;
-    content: "\f08e";
+    font-family: 'FontAwesome';
+    content: '\f08e';
     padding-left: 0.2em;
   }
 }
 
 /* Typography */
+.font-size-xxxl {
+  font-size: $font-size-extra-extra-extra-large;
+}
+
+.font-size-xxl {
+  font-size: $font-size-extra-extra-large;
+}
+
+.font-size-xl {
+  font-size: $font-size-extra-large;
+}
+
+.font-size-l {
+  font-size: $font-size-extra-large;
+}
+
+.font-size-m {
+  font-size: $font-size-medium;
+}
+
+.font-size-s {
+  font-size: $font-size-small;
+}
+
+.font-size-xs {
+  font-size: $font-size-extra-small;
+}
+
+.font-weight-normal {
+  font-weight: $font-weight-normal;
+}
+
+.font-weight-bold {
+  font-weight: $font-weight-bold;
+}
+
 .heading {
   color: $color-text-heading;
+  font-family: 'Montserrat', sans-serif;
+  text-indent: 0;
 }
 
 .heading--extra-large {
-  font-size: 3.157em;
+  font-size: $font-size-extra-extra-extra-large;
 }
 
 .heading--large {
-  font-size: 2.369em;
+  font-size: $font-size-extra-extra-large;
 }
 
 .heading--medium {
-  font-size: 1.777em;
+  font-size: $font-size-extra-large;
 }
 
 .heading--small {
-  font-size: 1.333em;
+  font-size: $font-size-large;
+}
+
+.panel--borderless {
+  padding: 1.66666%;
+  margin: 1.66666%;
+}
+
+.typeface__body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.typeface__headings {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.glyph {
+  font-size: $font-size-extra-extra-extra-large;
+}
+
+/* Logo */
+.logo {
+  min-width: 90px;
+}
+
+.logo--big,
+.logo--min-clear-space {
+  display: block;
+  height: auto;
+  width: $logo-big-width;
+  margin: 0 auto;
+}
+
+button {
+  &.download-logo {
+    display: block;
+    margin: 0 auto;
+    margin-top: .5em;
+
+    a {
+      color: $porcelain;
+      text-decoration: none;
+    }
+  }
+}
+
+.logo--medium {
+  width: $logo-medium-width;
+}
+
+.logo--xtrasmall {
+  display: block;
+  width: $logo-xtrasmall-width;
+  margin: 0 auto;
+}
+
+.logo--inpropper1 {
+  height: $logo-big-width / 2;
+  width: $logo-big-width;
+}
+
+.logo--inpropper2 {
+  height: $logo-big-width / 2;
+  width: $logo-big-width / 3;
 }
 
 /* Lists */
 .list {
   list-style-position: outside;
+  margin-bottom: 1em;
   padding-left: 2em;
 }
 
@@ -261,8 +378,6 @@ a {
 
 
 
-
-
 /* Navigation */
 .navigation {
 
@@ -294,38 +409,161 @@ a {
   background-color: $mine-shaft;
 }
 
+.text-color--inverted {
+  color: $color-text-invert;
+}
+
 /* Panel */
 
-.panel{
+.panel {
   padding: 1.66666%;
   margin: 1.66666%;
   border-radius: 0.2em;
   border: 1px solid black;
 }
 
-.panel--small{
+.panel--small {
   width: 30%;
 }
 
-.panel--medium{
+.panel--medium {
   width: 60%;
 }
 
-.panel--large{
+.panel--large {
   width: 90%;
+}
+
+.panel--extra-large {
+  width: 100%;
+}
+
+/* Buttons */
+.btn {
+  background: $color-background;
+  border-radius: 0.2em;
+  color: $color-text;
+  font-size: 1.333em;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  border: solid $color-border 1px;
+  text-decoration: none;
+  outline-width: 0;
+  outline: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: darken($color-background,10%);
+  color: $color-text;
+  border: solid $color-border 1px;
+  text-decoration: none;
+  outline-width: 0;
+  outline: none;
+}
+
+.btn--primary {
+  background: $color-primary;
+  border: solid darken($color-primary,10%) 1px;
+  color: $color-background;
+}
+
+.btn--primary:hover {
+  background: darken($color-primary,10%);
+  border: solid darken($color-primary,20%) 1px;
+  color: $color-background;
+}
+
+.btn--success {
+  background: $color-success;
+  border: solid darken($color-success,10%) 1px;
+  color: $color-background;
+}
+
+.btn--success:hover {
+  background: darken($color-success,10%);
+  border: solid darken($color-success,20%) 1px;
+  color: $color-background;
+}
+
+.btn--info {
+  background: $color-info;
+  border: solid darken($color-info,10%) 1px;
+  color: $color-background;
+}
+
+.btn--info:hover {
+  background: darken($color-info,10%);
+  border: solid darken($color-info,20%) 1px;
+  color: $color-background;
+}
+
+.btn--warning {
+  background: $color-warning;
+  border: solid darken($color-warning,10%) 1px;
+  color: $color-background;
+}
+
+.btn--warning:hover {
+  background: darken($color-warning,10%);
+  border: solid darken($color-warning,20%) 1px;
+  color: $color-background;
+}
+
+.btn--danger {
+  background: $color-danger;
+  border: solid darken($color-danger,10%) 1px;
+  color: $color-background;
+}
+
+.btn--danger:hover {
+  background: darken($color-danger,10%);
+  border: solid darken($color-danger,20%) 1px;
+  color: $color-background;
+}
+
+.btn--xs {
+  font-size: 0.563em;
+  padding: 0.5em 1em;
+}
+
+.btn--s {
+  font-size: 0.75em;
+  padding: 0.5em 1em;
+}
+
+.btn--m {
+  font-size: 1em;
+  padding: 0.5em 1em;
+}
+
+.btn--l {
+  font-size: 1.333em;
+  padding: 0.5em 1em;
+}
+
+.btn--xl {
+  font-size: 1.777em;
+  padding: 0.5em 1em;
+}
+
+.btn--xxl {
+  font-size: 2.369em;
+  padding: 0.5em 1em;
+}
+
+.btn--xxxl {
+  font-size: 3.157em;
+  padding: 0.5em 1em;
 }
 
 /* FLEX */
 
-.flex-container{
-  display: -webkit-flex;
+.flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-}
-
-.flex-container__item{
 }
 
 /* Sections */
@@ -334,6 +572,7 @@ a {
   background-color: $color-background;
   border-radius: 0.2em;
   padding: 0.5em;
+  margin: 0.5em 0 1.5em 0;
 }
 
 /* Note */
@@ -341,13 +580,14 @@ a {
 .note {
   background-color: $color-background;
   border-radius: 0.2em;
-  padding: 1em;
+  padding: 1em 1em 1em 2em;
   margin: 0.5em 0;
+  text-indent: -1em;
   width: auto;
   &:before {
     color: $color-accent;
     font-size: 1.333em;
-    content: "Note";
+    content: 'Note';
     border-right: 1px solid $color-border;
     padding-right: 0.5em;
     margin-right: 0.5em;
