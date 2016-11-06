@@ -111,6 +111,9 @@ body {
   font-size: 3.157em; }
 
 /* Logo */
+.logo {
+  min-width: 90px; }
+
 .logo--big,
 .logo--min-clear-space {
   display: block;
@@ -349,7 +352,7 @@ nav {
   .nav-container .logo--medium {
     display: block;
     margin: 0 auto;
-    margin-bottom: .8em;
+    padding: 1em;
     width: 200px; }
   .nav-container .p--nav {
     font-size: 0.75em;
@@ -359,10 +362,10 @@ nav {
   border-top: 1px solid #ECF0F1;
   cursor: pointer;
   font-size: 1.2em;
-  font-weight: bold; }
+  font-weight: bold;
+  min-height: 3em; }
   .main-category p {
-    padding-left: 1em;
-    margin: 1em 0; }
+    padding: .8em 0 .8em 1em; }
   .main-category ul {
     background: #ECF0F1;
     border-top: 1px solid #ECF0F1;

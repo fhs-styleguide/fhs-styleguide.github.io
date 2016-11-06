@@ -111,6 +111,9 @@ body {
   font-size: 3.157em; }
 
 /* Logo */
+.logo {
+  min-width: 90px; }
+
 .logo--big,
 .logo--min-clear-space {
   display: block;

@@ -19,7 +19,7 @@ nav {
   .logo--medium {
     display: block;
     margin: 0 auto;
-    margin-bottom: .8em;
+    padding: 1em;
     width: $logo-nav-size;
   }
 
@@ -35,10 +35,10 @@ nav {
   cursor: pointer;
   font-size: $font-size-nav-big;
   font-weight: bold;
+  min-height: 3em;
 
   p {
-    padding-left: 1em;
-    margin: 1em 0;
+    padding: .8em 0 .8em 1em;
   }
 
   ul {
