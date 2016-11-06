@@ -18,7 +18,7 @@ body {
     color: #d62c1a;
     text-decoration: underline; }
 
-p {
+.paragraph {
   margin: 1em 0; }
 
 /* Introduction */
@@ -145,6 +145,7 @@ button.download-logo {
 /* Lists */
 .list {
   list-style-position: outside;
+  margin-bottom: 1em;
   padding-left: 2em; }
 
 .list--unordered {
@@ -195,6 +196,9 @@ button.download-logo {
 
 .panel--large {
   width: 90%; }
+
+.panel--extra-large {
+  width: 100%; }
 
 /* Buttons */
 .btn {
@@ -311,7 +315,8 @@ button.download-logo {
 .section {
   background-color: #ECF0F1;
   border-radius: 0.2em;
-  padding: 0.5em; }
+  padding: 0.5em;
+  margin: 0.5em 0 1.5em 0; }
 
 /* Note */
 .note {
@@ -356,7 +361,8 @@ nav {
   font-size: 1.2em;
   font-weight: bold; }
   .main-category p {
-    padding-left: 1em; }
+    padding-left: 1em;
+    margin: 1em 0; }
   .main-category ul {
     background: #ECF0F1;
     border-top: 1px solid #ECF0F1;
