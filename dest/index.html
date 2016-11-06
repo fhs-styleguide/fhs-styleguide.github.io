@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
   <div class="container">
     <nav class="container__nav">
       <div class="fixed nav">
@@ -20,7 +19,8 @@
           <p class="p p--nav">STYLEGUIDE</p>
         </div>
         <ul class="treeMenu">
-          <li class="main-category content-container"><p>Brand Guide<span class="nav-icon nav-icon--open"></span></p>
+          <li class="main-category content-container">
+            <p>Brand Guide<span class="nav-icon nav-icon--open"></span></p>
             <ul>
               <li><a href="#brand-guide__introduction">Introduction</a></li>
               <li><a href="#brand-guide__colors">Colors</a></li>
@@ -28,13 +28,15 @@
               <li><a href="#brand-guide__logo">Logo</a></li>
             </ul>
           </li>
-          <li class="main-category content-container"><p>CSS Methodology<span class="nav-icon nav-icon--open"></span></p>
+          <li class="main-category content-container">
+            <p>CSS Methodology<span class="nav-icon nav-icon--open"></span></p>
             <ul>
               <li><a href="#CSS__code-style">Code Style</a></li>
               <li><a href="#CSS__class-naming">Class Naming</a></li>
             </ul>
           </li>
-          <li class="main-category last content-container"><p>Component Library<span class="nav-icon nav-icon--open"></span></p>
+          <li class="main-category last content-container">
+            <p>Component Library<span class="nav-icon nav-icon--open"></span></p>
             <ul>
               <li><a href="#component-library__headings">Headings</a></li>
               <li><a href="#component-library__lists">Lists</a></li>
@@ -52,13 +54,13 @@
       <h1 class="heading heading--extra-large">Brand Guide</h1>
       <section id="brand-guide__introduction">
         <h2 class="heading heading--large">Introduction</h2>
-        <p>As Dabilu Sports is currently in the process of transforming from a small startup company to a bigger corporation, we felt
-          the need to develop a Styleguide for our brand. It consists of three main parts: the brand guide, the defined CSS
-          methodologies and the component library to be used.</p>
+        <p>As Dabilu Sports is currently in the process of transforming from a small startup company to a bigger corporation,
+          we felt the need to develop a Styleguide for our brand. It consists of three main parts: the brand guide, the defined
+          CSS methodologies and the component library to be used.</p>
         <h3 class="heading heading--medium">The aims of this Styleguide are:</h3>
         <ul class="list list--disc">
-          <li>Provide our developers, designers and copywriters a consistent structure and orientation when creating
-            new components for our branded websites.
+          <li>Provide our developers, designers and copywriters a consistent structure and orientation when creating new components
+            for our branded websites.
             <li>Ensure that the public has the best possible experience when interacting with our websites.
         </ul>
       </section>
@@ -350,37 +352,42 @@
         <h2 class="heading heading--large">CSS Methodology</h2>
         <section id="CSS__code-style">
           <h3 class="heading heading--medium">Code Style</h3>
-          (S)CSS is the main language for styling Dabidu's website. In order to maintain good code readability and ensure that the CSS code is 
-          written in a consistent way, some rules need to be followed:
+          (S)CSS is the main language for styling Dabidu's website. In order to maintain good code readability and ensure that the
+          CSS code is written in a consistent way, some rules need to be followed:
           <ul class="list list--unordered">
-            <li class="list__item"><strong class="font-weight-bold">Indentation:</strong> Two spaces must be used. This ensures that code renders the same in every environment.</li>
-            <li class="list__item"><strong class="font-weight-bold">Rule declaration:</strong> Rules must be formatted as shown in the example below. Note the spaces, the semicolons, 
-              and the placement of the braces. Furthermore, do not forget to <a class="link" href="#CSS__class-naming">follow the class naming rules</a>.
+            <li class="list__item"><strong class="font-weight-bold">Indentation:</strong> Two spaces must be used. This ensures that code renders
+              the same in every environment.</li>
+            <li class="list__item"><strong class="font-weight-bold">Rule declaration:</strong> Rules must be formatted as shown in the example below.
+              Note the spaces, the semicolons, and the placement of the braces. Furthermore, do not forget to <a class="link"
+                href="#CSS__class-naming">follow the class naming rules</a>.
               <div class="flex-container section">
                 <div class="panel panel--large">
                   <h4 class="heading heading--small">Good</h4>
-              <pre><code class="language-css">  .block__element--modifier {
+                  <pre><code class="language-css">  .block__element--modifier {
   color: $color-primary;
   font-family: 'Open Sans', sans-serif;
 }</code></pre>
                 </div>
                 <div class="panel panel--large">
                   <h4 class="heading heading--small">Bad</h4>
-              <pre><code class="language-css">  .block__element--modifier, .block{
+                  <pre><code class="language-css">  .block__element--modifier, .block{
   color:#2C3e50;
     font-family: 'Open Sans',sans-serif
   }</code></pre>
                 </div>
               </div>
             </li>
-            <li class="list__item"><strong class="font-weight-bold">Single declarations:</strong> Even if a rule only include a single declaration, do not omit line breaks, i.e. do not write everything into 
-              one single line. This makes it easier to extend the rule if necessary.</li>            
-            <li class="list__item"><strong class="font-weight-bold">Units:</strong> Use relative lengths such as >em whenever possible, as opposed to using px for everything.</li>
-            <li class="list__item"><strong class="font-weight-bold">Zero values:</strong> Do not specify units for zero values, i.e use 0 as opposed to 0px, 0em, etc.</li>
+            <li class="list__item"><strong class="font-weight-bold">Single declarations:</strong> Even if a rule only include a single declaration,
+              do not omit line breaks, i.e. do not write everything into one single line. This makes it easier to extend
+              the rule if necessary.</li>
+            <li class="list__item"><strong class="font-weight-bold">Units:</strong> Use relative lengths such as >em whenever possible, as opposed
+              to using px for everything.</li>
+            <li class="list__item"><strong class="font-weight-bold">Zero values:</strong> Do not specify units for zero values, i.e use 0 as opposed
+              to 0px, 0em, etc.</li>
             <li class="list__item"><strong class="font-weight-bold">Files:</strong> Use UTF-8 encoding and add a new line at the end of the file.</li>
             <li class="list__item"><strong class="font-weight-bold">Quotations marks:</strong> Use single 'quotation marks' when possible.</li>
           </ul>
-          <p class="note">While some of these rules are checked through linting, as described in section <a class="link" href="CSS__code-style__pre-processors">Pre-Processors"</a>, 
+          <p class="note">While some of these rules are checked through linting, as described in section <a class="link" href="CSS__code-style__pre-processors">Pre-Processors"</a>,
             the programmer must not solely rely on linting, but keep the rules in mind and follow them thoroughly.</p>
           <h4 class="heading heading--small">File Structure</h4>
           <p>TODO: TO BE DONE</p>
@@ -402,8 +409,8 @@
         <section id="CSS__class-naming">
           <h3 class="heading heading--medium">Class Naming</h3>
           <div>
-            Our styleguide follows the Block, Element, Modifier Architecture. Every CSS class has to be named according to the following rules.
-            This section is a citation from: <a href="http://getbem.com/naming/" class="link link_external">http://getbem.com/naming/</a>
+            Our styleguide follows the Block, Element, Modifier Architecture. Every CSS class has to be named according to the following
+            rules. This section is a citation from: <a href="http://getbem.com/naming/" class="link link_external">http://getbem.com/naming/</a>
           </div>
           <h4 class="heading heading--small">Block</h4>
           Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other,
