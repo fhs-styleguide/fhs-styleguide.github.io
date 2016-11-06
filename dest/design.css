@@ -95,6 +95,52 @@ a {
 .glyph {
   font-size: 3.157em; }
 
+/* Logo */
+.logo--big,
+.logo--minClearSpace {
+  display: block;
+  height: auto;
+  width: 300px; }
+
+.logo--xtrasmall {
+  width: 90px; }
+
+.flex-container.logo--colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.div--rect {
+  margin-right: 1em;
+  max-width: 100px; }
+
+.rect {
+  height: 100px;
+  text-align: center;
+  width: 100px; }
+
+.rect--pickled-bluewood {
+  background: #2C3E50; }
+
+.rect--curious-blue {
+  background: #3498DB; }
+
+.rect--cinnabar {
+  background: #E74C3C; }
+
+.logo--inpropper1 {
+  height: 150px;
+  width: 300px; }
+
+.logo--inpropper2 {
+  height: 150px;
+  width: 100px; }
+
 /* Lists */
 .list {
   list-style-position: outside;
