@@ -112,10 +112,10 @@
               <ol class="list list--ordered">
                 <li class="list__item">This is the first list item.</li>
                 <li class="list__item">This is the second list item,<br>including a line break.</li>
-                <li class="list__item">This is the third rather long list item, which may take up multiple lines of space: 
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
-                  ultricies nec, pellentesque eu, pretium quis, sem. 
+                <li class="list__item">This is the third rather long list item, which may take up multiple lines of space:
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem.
                 </li>
                 <li class="list__item">This is the fourth and final list item.</li>
               </ol>
@@ -129,10 +129,10 @@
               <ul class="list list--unordered">
                 <li class="list__item">This is a list item.</li>
                 <li class="list__item">This is another list item,<br>including a line break.</li>
-                <li class="list__item">This is another rather long list item, which may take up multiple lines of space: 
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
-                  ultricies nec, pellentesque eu, pretium quis, sem. 
+                <li class="list__item">This is another rather long list item, which may take up multiple lines of space:
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem.
                 </li>
                 <li class="list__item">This is another list item.</li>
               </ul>
@@ -143,6 +143,132 @@
             </div>
           </div>
         </section>
+
+
+        <section id="brand-guide__form-elements">
+          <h2 class="heading heading--large">Form Elements</h2>
+          <p>Our Forms have to be in a really good shape, just like our Brand Models.
+            <br /> Here is the Guide on how to implement all kinds of Form Elements</p>
+
+          <h3 class="heading heading--medium">Input</h3>
+          <p>Text Input fields</p>
+
+          <form class="form">
+            <div class="form__flex">
+              <div class="form__float">
+                <label for="required_input" class="form__label">Required Field: *</label>
+                <input class="form__input form__input--required" id="required_input" type="text" placeholder="Max@Mustermann.org"></input>
+              </div>
+
+              <div class="form__float">
+                <label for="optional_input" class="form__label">Optional Field:</label>
+                <input class="form__input" id="optional_input" type="text" placeholder="Phone"></input>
+              </div>
+            </div>
+
+            <div class="form__flex">
+              <div class="form__float">
+                <label for="valid_input" class="form__label">Valid Field</label>
+                <input class="form__input form__input--valid" id="valid_input" type="text" placeholder="Valid"></input>
+              </div>
+
+              <div class="form__float">
+                <label for="invalid_input" class="form__label">Invalid Field</label>
+                <input class="form__input form__input--invalid" id="invalid_input" type="text" placeholder="Invalid"></input>
+              </div>
+            </div>
+            <div class="form__flex">
+            <pre><code class="language-markup">&lt;form class="form">
+    &lt;div class="form__flex">
+      &lt;div class="form__float">
+        &lt;label for="required_input" class="form__label">Required Field: *&lt;/label>
+        &lt;input class="form__input form__input--required" id="required_input" type="text" placeholder="Max@Mustermann.org">&lt;/input>
+      &lt;/div>
+
+      &lt;div class="form__float">
+        &lt;label for="optional_input" class="form__label">Optional Field:&lt;/label>
+        &lt;input class="form__input" id="optional_input" type="text" placeholder="Phone">&lt;/input>
+      &lt;/div>
+    &lt;/div>
+
+    &lt;div class="form__flex">
+      &lt;div class="form__float">
+        &lt;label for="valid_input" class="form__label">Valid Field&lt;/label>
+        &lt;input class="form__input form__input--valid" id="valid_input" type="text" placeholder="Valid">&lt;/input>
+      &lt;/div>
+
+      &lt;div class="form__float">
+        &lt;label for="invalid_input" class="form__label">Invalid Field&lt;/label>
+        &lt;input class="form__input form__input--invalid" id="invalid_input" type="text" placeholder="Invalid">&lt;/input>
+    &lt;/div>
+&lt;/form></code></pre>
+            </div>
+          </form>
+
+          <h3 class="heading heading--medium">Textarea</h3>
+          <p>Textarea</p>
+            <form class="form">
+              <label for="textarea" class="form__label">Place your thoughts</label>
+              <textarea class="form__textarea" id="textarea" type="text" rows="6" cols="100" placeholder="Place for your thoughts"></textarea>
+            </form>
+            <pre><code class="language-markup">&lt;form class="form">
+  &lt;label for="textarea" class="form__label">Place your thoughts&lt;/label>
+  &lt;textarea class="form__textarea" id="textarea" type="text" rows="6" cols="100" placeholder="Place for your thoughts">&lt;/textarea>
+&lt;/form></code></pre>
+
+
+          <h3 class="heading heading--medium">Radio Checkboxes</h3>
+          <p>Checkboxes</p>
+          <form class="form">
+              <label class="form__label">Do you like our Styleguide ?</label>
+
+              <input type="radio" id="likes_it" name="awesome" class="form__checkbox--radio" value="awesome">
+              <label for="likes_it">Yes, awesome!</label>
+
+              <input type="radio" id="medium_like" name="medium" class="form__checkbox--radio" value="medium">
+              <label for="medium_like">It's decent</label>
+
+              <input type="radio" id="ugly_af" name="ugly" class="form__checkbox--radio" value="ugly">
+              <label for="ugly_af">No! disgusting</label>
+          </form>
+          <pre><code class="language-markup">&lt;form class="form">
+  &lt;label class="form__label">Do you like our Styleguide ?&lt;/label>
+
+  &lt;input type="radio" id="likes_it" name="awesome" class="form__checkbox--radio" value="awesome">
+  &lt;label for="likes_it">Yes, awesome!&lt;/label>
+
+  &lt;input type="radio" id="medium_like" name="medium" class="form__checkbox--radio" value="medium">
+  &lt;label for="medium_like">It's decent&lt;/label>
+
+  &lt;input type="radio" id="ugly_af" name="ugly" class="form__checkbox--radio" value="ugly">
+  &lt;label for="ugly_af">No! disgusting&lt;/label>
+          &lt;/form></code></pre>
+
+        <h3 class="heading heading--medium">Select Fields</h3>
+        <p>Select Fields</p>
+        <form class="form">
+            <label for="select" class="form__label">Select Field:</label>
+            <select class="form__select">
+                <option disabled selected>choose</option>
+                <option value="small">Dabilu Shoes</option>
+                <option value="medium">Dabilu Shirts</option>
+                <option value="large">Dabilu Sneakers</option>
+                <option value="xxlarge">Dabilu Backpacks</option>
+            </select>
+        </form>
+        <pre><code class="language-markup">&lt;form class="form">
+&lt;label for="select" class="form__label">Select Field:</label>
+&lt;select class="form__select">
+    &lt;option disabled selected>choose&lt;/option>
+    &lt;option value="small">Dabilu Shoes&lt;/option>
+    &lt;option value="medium">Dabilu Shirts&lt;/option>
+    &lt;option value="large">Dabilu Sneakers&lt;/option>
+    &lt;option value="xxlarge">Dabilu Backpacks&lt;/option>
+  &lt;/select>
+&lt;/form></code></pre>
+  </section>
+
+
         <section id="component-library__links">
           <h2>Links</h2>
           <a href="#">Internal link</a><br>

@@ -23,6 +23,17 @@ $color-text-link: $cinnabar;
 $color-text-link-visited: $mariner;
 $color-text-link-hover: darken($cinnabar, 10%);
 $color-border: black;
+$input-height-small: 20px;
+$input-height-medium: 40px;
+$input-height-large: 50px;
+$input-height-xlarge: 60px;
+$input-radius: 4px;
+$input-padding: 10px 16px;
+$textarea-height-small: 40px;
+$textarea-height-medium: 80px;
+$textarea-height-large: 120px;
+$textarea-height-xlarge: 200px;
+
 
 /* Common elements */
 
@@ -134,6 +145,130 @@ a {
   text-indent: -1em;
 }
 
+/* Form Elements */
+.form{
+  margin: 10px 0;
+  padding: 20px 25px 15px 25px;
+  border-radius: 6px;
+  background: $porcelain;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form__flex{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.form__label{
+  display: block;
+  margin-bottom: 4px;
+}
+
+.form__float{
+  flex: 1 1 auto;
+  margin: 0 20px 15px 0;
+  float: left;
+}
+
+.form__input{
+   height: 34px;
+   width: 100%;
+   box-sizing: border-box;
+   padding: 0 10px 0 10px;
+
+   border: 2px solid $mine-shaft;
+   border-radius: $input-radius;
+
+   transition: all .25s ease;
+}
+
+.form__group{
+    display: block;
+    width: 100%;
+}
+
+.form__input--focus{
+   border: 2px solid $pickled-bluewood;
+}
+
+.form__input--required {
+  padding-right: 20px;
+  background: url(../img/required2.png) no-repeat right #fff;
+   }
+
+.form__input--valid {
+  border: 2px solid $curious-blue;
+  padding-right: 34px;
+  background: url(../img/success.png) no-repeat right #fff;
+}
+
+.form__input--invalid {
+  border: 2px solid $cinnabar;
+  padding-right: 40px;
+  background: url(../img/error.png) no-repeat right #fff;
+}
+
+
+.form__textarea{
+  appearance: none;
+  box-sizing: border-box;
+  border: 2px solid $mine-shaft;
+  border-radius: $input-radius;
+  font-family: inherit;
+  font-size: 1em;
+  display: inline-block;
+  resize: vertical;
+  outline: 0;
+  width: 50%;
+}
+
+.form__checkbox--radio{
+    display: none;
+
+    &+::before{
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      content: '';
+      border-radius: 100%;
+      margin-right: 6px;
+      border: 1px solid $mine-shaft;
+      transition: background .25s ease;
+    }
+
+    &:hover+::before, &:checked+::before {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 1px solid $mine-shaft;
+      background: $curious-blue;
+    }
+
+    &+label {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      margin-right: 22px;
+      color: $mine-shaft;
+      font-weight: bold;
+      transition: all .25s ease;
+    }
+
+}
+
+
+
+
+
+/* Navigation */
+.navigation {
+
+}
+
+
 /* Background Colors */
 .bg-color {
   background-color: $color-background;
@@ -218,6 +353,8 @@ a {
     margin-right: 0.5em;
   }
 }
+
+
 
 /* HELPER */
 

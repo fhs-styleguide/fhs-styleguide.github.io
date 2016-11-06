@@ -50,18 +50,6 @@ a {
   padding: 1.6666%;
   margin: 0 auto; }
 
-.note {
-  background-color: #ECF0F1;
-  padding: 1em;
-  width: auto; }
-  .note:before {
-    color: #E74C3C;
-    font-size: 1.333em;
-    content: "Note";
-    border-right: 1px solid black;
-    padding-right: 0.5em;
-    margin-right: 0.5em; }
-
 .link_external:after {
   font-family: FontAwesome;
   content: "\f08e";
@@ -83,13 +71,131 @@ a {
 .heading--small {
   font-size: 1.333em; }
 
-.typography-headings {
-  background-color: #ECF0F1;
-  padding: 0.5em; }
+/* Lists */
+.list {
+  list-style-position: outside;
+  padding-left: 2em; }
 
-.typography-headings__note {
-  margin-top: 0.5em; }
+.list--unordered {
+  list-style-type: disc; }
 
+.list--ordered {
+  list-style-type: decimal; }
+
+.list__item {
+  margin: 0.25em 0;
+  padding-left: 1em;
+  text-indent: -1em; }
+
+/* Form Elements */
+.form {
+  margin: 10px 0;
+  padding: 20px 25px 15px 25px;
+  border-radius: 6px;
+  background: #ECF0F1;
+  width: 100%;
+  box-sizing: border-box; }
+
+.form__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0; }
+
+.form__label {
+  display: block;
+  margin-bottom: 4px; }
+
+.form__float {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 0 20px 15px 0;
+  float: left; }
+
+.form__input {
+  height: 34px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px 0 10px;
+  border: 2px solid #333333;
+  border-radius: 4px;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease; }
+
+.form__group {
+  display: block;
+  width: 100%; }
+
+.form__input--focus {
+  border: 2px solid #2C3E50; }
+
+.form__input--required {
+  padding-right: 20px;
+  background: url(../img/required2.png) no-repeat right #fff; }
+
+.form__input--valid {
+  border: 2px solid #3498DB;
+  padding-right: 34px;
+  background: url(../img/success.png) no-repeat right #fff; }
+
+.form__input--invalid {
+  border: 2px solid #E74C3C;
+  padding-right: 40px;
+  background: url(../img/error.png) no-repeat right #fff; }
+
+.form__textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  box-sizing: border-box;
+  border: 2px solid #333333;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1em;
+  display: inline-block;
+  resize: vertical;
+  outline: 0;
+  width: 50%; }
+
+.form__checkbox--radio {
+  display: none; }
+  .form__checkbox--radio + ::before {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    content: '';
+    border-radius: 100%;
+    margin-right: 6px;
+    border: 1px solid #333333;
+    -webkit-transition: background .25s ease;
+    transition: background .25s ease; }
+  .form__checkbox--radio:hover + ::before, .form__checkbox--radio:checked + ::before {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #333333;
+    background: #3498DB; }
+  .form__checkbox--radio + label {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-right: 22px;
+    color: #333333;
+    font-weight: bold;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease; }
+
+/* Navigation */
 /* Background Colors */
 .bg-color {
   background-color: #ECF0F1; }
@@ -132,6 +238,8 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%; }
 
 /* Sections */
@@ -139,6 +247,21 @@ a {
   background-color: #ECF0F1;
   border-radius: 0.2em;
   padding: 0.5em; }
+
+/* Note */
+.note {
+  background-color: #ECF0F1;
+  border-radius: 0.2em;
+  padding: 1em;
+  margin: 0.5em 0;
+  width: auto; }
+  .note:before {
+    color: #E74C3C;
+    font-size: 1.333em;
+    content: "Note";
+    border-right: 1px solid black;
+    padding-right: 0.5em;
+    margin-right: 0.5em; }
 
 /* HELPER */
 .fixed {
