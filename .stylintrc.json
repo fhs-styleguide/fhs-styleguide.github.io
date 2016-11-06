@@ -25,7 +25,7 @@
         "block-no-empty": true,
         "block-no-single-line": true,
         "block-opening-brace-newline-after": "always",
-        "block-opening-brace-newline-before": "never-multi-line",
+        "block-opening-brace-newline-before": "never-single-line",
         "block-opening-brace-space-before": "always",
         "selector-type-case": "lower",
         "media-feature-colon-space-after": "always",

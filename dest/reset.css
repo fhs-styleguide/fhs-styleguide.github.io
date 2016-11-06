@@ -1,3 +1,4 @@
+/* CSS Reset */
 html {
   box-sizing: border-box; }
 
@@ -123,7 +124,6 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
   content: none; }
 
 table {
