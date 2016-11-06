@@ -112,11 +112,19 @@ p {
 
 /* Logo */
 .logo--big,
-.logo--minClearSpace {
+.logo--min-clear-space {
   display: block;
   height: auto;
   width: 300px;
   margin: 0 auto; }
+
+button.download-logo {
+  display: block;
+  margin: 0 auto;
+  margin-top: .5em; }
+  button.download-logo a {
+    color: #ECF0F1;
+    text-decoration: none; }
 
 .logo--medium {
   width: 180px; }
@@ -353,9 +361,11 @@ nav {
     background: #ECF0F1;
     border-top: 1px solid #ECF0F1;
     display: none;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-bottom: .5em;
     padding-left: 1.5em;
-    padding-top: .5em;
-    padding-bottom: .5em; }
+    padding-top: .5em; }
   .main-category a {
     color: #2980B9;
     display: block;

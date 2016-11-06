@@ -44,9 +44,11 @@ nav {
     background: $porcelain;
     border-top: 1px solid $porcelain;
     display: none;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-bottom: .5em;
     padding-left: 1.5em;
     padding-top: .5em;
-    padding-bottom: .5em;
   }
 
   a {

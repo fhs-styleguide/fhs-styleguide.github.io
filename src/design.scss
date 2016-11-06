@@ -190,11 +190,24 @@ p {
 
 /* Logo */
 .logo--big,
-.logo--minClearSpace {
+.logo--min-clear-space {
   display: block;
   height: auto;
   width: $logo-big-width;
   margin: 0 auto;
+}
+
+button {
+  &.download-logo {
+    display: block;
+    margin: 0 auto;
+    margin-top: .5em;
+
+    a {
+      color: $porcelain;
+      text-decoration: none;
+    }
+  }
 }
 
 .logo--medium {
