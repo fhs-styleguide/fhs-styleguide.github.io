@@ -47,7 +47,7 @@ body {
   padding: 1.6666%;
   margin: 0 auto; }
 
-.link_external:after {
+.link--external:after {
   font-family: 'FontAwesome';
   content: '\f08e';
   padding-left: 0.2em; }
