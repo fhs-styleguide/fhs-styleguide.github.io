@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="design.css">
   <link rel="stylesheet" type="text/css" href="prism.css">
+  <link rel="stylesheet" type="text/css" href="treemenu.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 </head>
 
@@ -13,28 +14,37 @@
 
   <div class="container">
     <nav class="container__nav">
-      <div class="fixed bg-color nav">
-        <a href="#brand-guide" class="link">Brand Guide</a>
-        <ul>
-          <li><a href="#brand-guide__introduction" class="link"> Introduction</a></li>
-          <li><a href="#brand-guide__colors" class="link">Colors</a></li>
-          <li><a href="#brand-guide__typography" class="link">Typography</a></li>
-          <li><a href="#brand-guide__logo" class="link">Logo</a></li>
-        </ul>
-        <a href="#CSS" class="link">CSS Methodology</a>
-        <ul>
-          <li><a href="#CSS__code-rules" class="link">Code Style Rules </a></li>
-          <li><a href="#CSS__class-naming" class="link">Class Naming</a></li>
-        </ul>
-        <a href="#component-library" class="link">Component Library</a>
-        <ul>
-          <li><a href="#component-library__headings" class="link">Headings</a></li>
-          <li><a href="#component-library__lists" class="link">Lists</a></li>
-          <li><a href="#component-library__links" class="link">Links</a></li>
-          <li><a href="#component-library__buttons" class="link">Buttons</a></li>
-          <li><a href="#component-library__form-elements" class="link">Form Elements</a></li>
-          <li><a href="#component-library__media-blocks" class="link">Media Blocks</a></li>
-          <li><a href="#component-library__navigation" class="link">Navigation</a></li>
+      <div class="fixed nav">
+        <div class="nav-container">
+          <img class="logo logo--medium nav" src="../img/Dabilu_Logo_V2.jpg" alt="Dabilu Sports Logo">
+          <p class="p p--nav">STYLEGUIDE</p>
+        </div>
+        <ul class="treeMenu">
+          <li class="main-category content-container"><p>Brand Guide<span class="nav-icon nav-icon--open"></span></p>
+            <ul>
+              <li><a href="#brand-guide__introduction">Introduction</a></li>
+              <li><a href="#brand-guide__colors">Colors</a></li>
+              <li><a href="#brand-guide__typography">Typography</a></li>
+              <li><a href="#brand-guide__logo">Logo</a></li>
+            </ul>
+          </li>
+          <li class="main-category content-container"><p>CSS Methodology<span class="nav-icon nav-icon--open"></span></p>
+            <ul>
+              <li><a href="#CSS__code-style">Code Style</a></li>
+              <li><a href="#CSS__class-naming">Class Naming</a></li>
+            </ul>
+          </li>
+          <li class="main-category last content-container"><p>Component Library<span class="nav-icon nav-icon--open"></span></p>
+            <ul>
+              <li><a href="#component-library__headings">Headings</a></li>
+              <li><a href="#component-library__lists">Lists</a></li>
+              <li><a href="#component-library__links">Links</a></li>
+              <li><a href="#component-library__buttons">Buttons</a></li>
+              <li><a href="#component-library__form-elements">Form Elements</a></li>
+              <li><a href="#component-library__media-blocks">Media Blocks</a></li>
+              <li><a href="#component-library__navigation">Navigation</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </nav>
@@ -763,6 +773,8 @@ $desktop-width: 1024px;
   <script src="https://use.fontawesome.com/8558f65789.js"></script>
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   <script src="prism.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="treemenu.js"></script>
 </body>
 
 </html>

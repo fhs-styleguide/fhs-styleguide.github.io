@@ -335,3 +335,60 @@ body {
 /* HELPER */
 .fixed {
   position: fixed; }
+
+nav {
+  border: 1px solid #ECF0F1; }
+
+.fixed {
+  padding: 0; }
+
+.nav-container {
+  margin-bottom: 2em; }
+  .nav-container .logo--medium {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: .8em; }
+  .nav-container .p--nav {
+    font-size: 0.75em;
+    text-align: center; }
+
+.main-category {
+  border-top: 1px solid #ECF0F1;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: bold; }
+  .main-category p {
+    line-height: 3em;
+    padding-left: 1em; }
+  .main-category ul {
+    background: #ECF0F1;
+    border-top: 1px solid #ECF0F1;
+    display: none;
+    padding-left: 1.5em;
+    padding-top: .5em;
+    padding-bottom: .5em; }
+  .main-category a {
+    color: #2980B9;
+    display: block;
+    font-size: 0.9em;
+    line-height: 2em;
+    text-decoration: none; }
+    .main-category a:hover {
+      color: #E74C3C; }
+  .main-category .active {
+    color: #E74C3C; }
+
+.last {
+  border-bottom: 1px solid #ECF0F1; }
+
+.nav-icon {
+  color: #b7bcc2;
+  float: right;
+  font-size: .5em;
+  padding-right: 3em; }
+
+.nav-icon--open::after {
+  content: '\25BC'; }
+
+.nav-icon--close::after {
+  content: '\25B2'; }
