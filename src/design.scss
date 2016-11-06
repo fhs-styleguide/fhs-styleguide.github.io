@@ -48,22 +48,22 @@ $logo-xtrasmall-width: 90px;
 /* Common elements */
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: $font-weight-normal;
-    line-height: 1.45;
-    color: $color-text;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: $font-weight-normal;
+  line-height: 1.45;
+  color: $color-text;
 }
 
 .link {
-    text-decoration: none;
-    color: $color-text-link;
-    &:visited {
-        color: $color-text-link-visited;
-    }
-    &:hover {
-        color: $color-text-link-hover;
-        text-decoration: underline;
-    }
+  text-decoration: none;
+  color: $color-text-link;
+  &:visited {
+    color: $color-text-link-visited;
+  }
+  &:hover {
+    color: $color-text-link-hover;
+    text-decoration: underline;
+  }
 }
 
 /* Introduction */
@@ -75,22 +75,21 @@ body {
 /* Classes */
 
 .container {
-    display: -webkit-flex;
-    display: flex;
-    padding: 1.6666%;
-    width: 100%;
+  display: flex;
+  padding: 1.6666%;
+  width: 100%;
 }
 
-.container__nav{
+.container__nav {
   width: 25%;
 }
 
-.container__main{
+.container__main {
   width: 75%;
   padding: 1.6666%;
 }
 
-.nav{
+.nav {
   width: 25%;
   border-radius: 0.2em;
   padding: 1.6666%;
@@ -99,8 +98,8 @@ body {
 
 .link_external {
   &:after {
-    font-family: FontAwesome;
-    content: "\f08e";
+    font-family: 'FontAwesome';
+    content: '\f08e';
     padding-left: 0.2em;
   }
 }
@@ -257,22 +256,22 @@ body {
 
 /* Panel */
 
-.panel{
+.panel {
   padding: 1.66666%;
   margin: 1.66666%;
   border-radius: 0.2em;
   border: 1px solid black;
 }
 
-.panel--small{
+.panel--small {
   width: 30%;
 }
 
-.panel--medium{
+.panel--medium {
   width: 60%;
 }
 
-.panel--large{
+.panel--large {
   width: 90%;
 }
 
@@ -286,7 +285,7 @@ body {
   margin: 0.5em;
   border: solid $color-border 1px;
   text-decoration: none;
-  outline-width: 0px;
+  outline-width: 0;
   outline: none;
 }
 
@@ -296,7 +295,7 @@ body {
   color: $color-text;
   border: solid $color-border 1px;
   text-decoration: none;
-  outline-width: 0px;
+  outline-width: 0;
   outline: none;
 }
 
@@ -360,46 +359,48 @@ body {
   color: $color-background;
 }
 
-.btn--xs{
+.btn--xs {
   font-size: 0.563em;
   padding: 0.5em 1em;
 }
-.btn--s{
+
+.btn--s {
   font-size: 0.75em;
   padding: 0.5em 1em;
 }
-.btn--m{
+
+.btn--m {
   font-size: 1em;
   padding: 0.5em 1em;
 }
-.btn--l{
+
+.btn--l {
   font-size: 1.333em;
   padding: 0.5em 1em;
 }
-.btn--xl{
+
+.btn--xl {
   font-size: 1.777em;
   padding: 0.5em 1em;
 }
-.btn--xxl{
+
+.btn--xxl {
   font-size: 2.369em;
   padding: 0.5em 1em;
 }
-.btn--xxxl{
+
+.btn--xxxl {
   font-size: 3.157em;
   padding: 0.5em 1em;
 }
 
 /* FLEX */
 
-.flex-container{
-  display: -webkit-flex;
+.flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-}
-
-.flex-container__item{
 }
 
 /* Sections */
@@ -422,7 +423,7 @@ body {
   &:before {
     color: $color-accent;
     font-size: 1.333em;
-    content: "Note";
+    content: 'Note';
     border-right: 1px solid $color-border;
     padding-right: 0.5em;
     margin-right: 0.5em;
