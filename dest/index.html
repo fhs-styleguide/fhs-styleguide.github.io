@@ -710,7 +710,48 @@ div.block__elem {
           </div>
         </section>
         <section id="component-library__form-elements"></section>
-        <section id="component-library__media-blocks"></section>
+        <section id="component-library__media-blocks">
+          <h2 class="heading heading--medium">Media Blocks</h2>
+          <p>In order to write the cleanest and most readable code possible we use mixins. Mixins are groups of styles that
+            can be reused throughout our code. One of the features of mixins is that they can use blocks of content which
+            is especially usefull for media-queries.</p>
+          <br>
+          <p>They should be written like this:</p>
+          <div class="section ">
+            <div class="panel">
+              <h3 class="heading heading--small">SCSS - Create Mixins</h3>
+              <p>Create mixins in order to be able to use named nested media queries:</p>
+              <pre class="language-css"><code class="language-css">$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+</code></pre>
+              <h3 class="heading heading--small">SCSS - Use Mixins</h3>
+              <p>Use mixins as named nested media queries like that:</p>
+              <pre class="language-css"><code class="language-css">p {
+  font-size: 16px;
+
+  @include tablet {
+    font-size: 18px;
+  }
+
+  @include desktop {
+    font-size: 20px;
+  }
+}</code></pre>
+            </div>
+          </div>
+        </section>
         <section id="component-library__navigation"></section>
       </section>
     </section>
