@@ -43,6 +43,7 @@ $rect-width: 142px;
 $rect-height: 50px;
 
 $logo-big-width: 300px;
+$logo-medium-width: 180px;
 $logo-xtrasmall-width: 90px;
 
 /* Common elements */
@@ -67,6 +68,10 @@ body {
     color: $color-text-link-hover;
     text-decoration: underline;
   }
+}
+
+p {
+  margin: 1em 0;
 }
 
 /* Introduction */
@@ -190,6 +195,10 @@ body {
   height: auto;
   width: $logo-big-width;
   margin: 0 auto;
+}
+
+.logo--medium {
+  width: $logo-medium-width;
 }
 
 .logo--xtrasmall {

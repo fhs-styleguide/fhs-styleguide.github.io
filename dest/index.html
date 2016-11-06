@@ -54,9 +54,9 @@
       <h1 class="heading heading--extra-large">Brand Guide</h1>
       <section id="brand-guide__introduction">
         <h2 class="heading heading--large">Introduction</h2>
-        <p>As Dabilu Sports is currently in the process of transforming from a small startup company to a bigger corporation,
-          we felt the need to develop a Styleguide for our brand. It consists of three main parts: the brand guide, the defined
-          CSS methodologies and the component library to be used.</p>
+        <p class="paragraph">As Dabilu Sports is currently in the process of transforming from a small startup company to a bigger corporation, we felt
+          the need to develop a Styleguide for our brand. It consists of three main parts: the brand guide, the defined CSS
+          methodologies and the component library to be used.</p>
         <h3 class="heading heading--medium">The aims of this Styleguide are:</h3>
         <ul class="list list--disc">
           <li>Provide our developers, designers and copywriters a consistent structure and orientation when creating new components
@@ -66,7 +66,7 @@
       </section>
       <section id="brand-guide__colors">
         <h2 class="heading heading--large">Colors</h2>
-        <p>The primary brand colors are used to represent Dabilu Sports in public and must reflect the Dabilu Sports brand.
+        <p class="paragraph">The primary brand colors are used to represent Dabilu Sports in public and must reflect the Dabilu Sports brand.
           These colors are part of our corporate identity.</p>
         <div class="section">
           <div class="panel">
@@ -86,7 +86,7 @@
           </div>
         </div>
 
-        <p>
+        <p class="paragraph">
           If colors are used in SCSS classes, they may only be applied as variables. All colors we are using have their own variable.
         </p>
         <div class="section">
@@ -280,7 +280,7 @@
           </div>
         </div>
         <h3 class="heading heading--medium">Font Sizes</h3>
-        <p>A default base size of 16px is assumed. A scale of 1.333 (Perfect Fourth) is used for increased clarity. Running
+        <p class="paragraph">A default base size of 16px is assumed. A scale of 1.333 (Perfect Fourth) is used for increased clarity. Running
           text should be in medium size, <a href="#component-library__headings" class="link">headings</a> are larger. Small
           font size is used, for example, for time stamps and legal information such as General Terms and Conditions.
         </p>
@@ -306,17 +306,17 @@
       <section id="brand-guide__logo">
         <section id="brand-guide__logo">
           <h2 class="heading heading--large">Logo</h2>
-          <p>This section contains the Logo Usage Guidelines for Dabilu Sports.</p>
+          <p class="paragraph">This section contains the Logo Usage Guidelines for Dabilu Sports.</p>
           <h3 class="heading heading--medium">Logo Artwork</h3>
           <div class="section">
             <img class="logo--big" src="../img/Dabilu_Logo_V2.jpg" alt="Dabilu Sports Logo">
           </div>
-          <p>The Dabilu Sports Logo is comprised of the two laurel leafs on the left and right side, the three stars in the
+          <p class="paragraph">The Dabilu Sports Logo is comprised of the two laurel leafs on the left and right side, the three stars in the
             middle on top (mark) and the Dabilu Sports lettering (logotype).</p>
-          <p>The logotype is custom designed lettering and should never be replaced by a font or any other type.</p>
-          <p>The mark and logotype must never be used seperately!</p>
+          <p class="paragraph">The logotype is custom designed lettering and should never be replaced by a font or any other type.</p>
+          <p class="paragraph">The mark and logotype must never be used seperately!</p>
           <h3 class="heading heading--medium">Color</h3>
-          <p>When color is an option the following colors must be used (usage as shown in the logo image above):</p>
+          <p class="paragraph">When color is an option the following colors must be used (usage as shown in the logo image above):</p>
           <div class="section flex-container">
             <div class="item bg-color bg-color--primary panel panel--small text-color--inverted">$pickled-bluewood: #2C3E50;</div>
             <div class="item bg-color bg-color--shade panel panel--small text-color--inverted">$curious-blue: #3498DB;</div>
@@ -324,7 +324,7 @@
           </div>
           <p class="note">You can find all the available colors in the <a class="link" href="#brand-guide__colors">Colors section</a>.</p>
           <h3 class="heading heading--medium">Size</h3>
-          <p>The dimensions of the artwork have been selected accordingly and should never be altered. Examples below show improper
+          <p class="paragraph">The dimensions of the artwork have been selected accordingly and should never be altered. Examples below show improper
             usage:
           </p>
           <div class="section flex-container">
@@ -332,16 +332,16 @@
             <img class="logo logo--inpropper2" src="../img/Dabilu_Logo_inpropper.jpg" alt="Dabilu Sports Logo">
           </div>
           <h3 class="heading heading--medium">Minimum Size</h3>
-          <p>For maximum performance, it is recommended that the minimum size for reproduction of the artwork is 90 pixels in
+          <p class="paragraph">For maximum performance, it is recommended that the minimum size for reproduction of the artwork is 90 pixels in
             width, whilst retaining the original set dimensions. This roughly equates to 24mm across on paper.</p>
           <div class="section">
             <img class="logo logo--xtrasmall" src="../img/Dabilu_Logo_V2.jpg" alt="Dabilu Sports Logo">
           </div>
           <h3 class="heading heading--medium">Minimum Clear Space</h3>
-          <p>To protect the integrity of the Dabilu Sports brand and to achieve maximum recognition, it is important for assisting
+          <p class="paragraph">To protect the integrity of the Dabilu Sports brand and to achieve maximum recognition, it is important for assisting
             graphical elements, or other company logos, to not be in direct contact with the Dabilu Sports logo artwork.</p>
           <br>
-          <p>By visually imagining a containing box around the artwork, any assisting elements should be at least a "D"s width
+          <p class="paragraph">By visually imagining a containing box around the artwork, any assisting elements should be at least a "D"s width
             away from the logo artwork.</p>
           <div class="section">
             <img class="logo logo--minClearSpace" src="../img/Dabilu_Logo_minClearSpace.jpg" alt="Dabilu Sports Logo">
@@ -390,9 +390,9 @@
           <p class="note">While some of these rules are checked through linting, as described in section <a class="link" href="CSS__code-style__pre-processors">Pre-Processors"</a>,
             the programmer must not solely rely on linting, but keep the rules in mind and follow them thoroughly.</p>
           <h4 class="heading heading--small">File Structure</h4>
-          <p>TODO: TO BE DONE</p>
+          <p class="paragraph">TODO: TO BE DONE</p>
           <h4 class="heading heading--small" id="CSS__code-style__pre-processors">Pre-Processors</h4>
-          <p>The building process of the CSS files makes use of <a href="http://gulpjs.com/" class="link link_external">gulp</a>            and <a href="http://postcss.org/" class="link link_external">PostCSS</a> and consists of several steps:
+          <p class="paragraph">The building process of the CSS files makes use of <a href="http://gulpjs.com/" class="link link_external">gulp</a>            and <a href="http://postcss.org/" class="link link_external">PostCSS</a> and consists of several steps:
             <ul class="list list--ordered">
               <li class="list__item">The SCSS files are linted using <a href="https://www.npmjs.com/package/stylelint" class="link link_external">stylelint</a>,
                 enforcing consistent conventions throught all SCSS files.
@@ -525,7 +525,7 @@ div.block__elem {
         <h1 class="heading heading--extra-large">Component Library</h1>
         <section id="component-library__headings">
           <h3 class="heading heading--medium">Headings</h3>
-          <p>Take a look at the <a href="#brand-guide__typography" class="link">typography section</a> for additional information
+          <p class="paragraph">Take a look at the <a href="#brand-guide__typography" class="link">typography section</a> for additional information
             on font sizes.</p>
           <div class="flex-container section ">
             <div class="panel panel--large">
@@ -659,15 +659,15 @@ div.block__elem {
         <section id="component-library__form-elements"></section>
         <section id="component-library__media-blocks">
           <h2 class="heading heading--medium">Media Blocks</h2>
-          <p>In order to write the cleanest and most readable code possible we use mixins. Mixins are groups of styles that
+          <p class="paragraph">In order to write the cleanest and most readable code possible we use mixins. Mixins are groups of styles that
             can be reused throughout our code. One of the features of mixins is that they can use blocks of content which
             is especially usefull for media-queries.</p>
           <br>
-          <p>They should be written like this:</p>
+          <p class="paragraph">They should be written like this:</p>
           <div class="section ">
             <div class="panel">
               <h3 class="heading heading--small">SCSS - Create Mixins</h3>
-              <p>Create mixins in order to be able to use named nested media queries:</p>
+              <p class="paragraph">Create mixins in order to be able to use named nested media queries:</p>
               <pre class="language-css"><code class="language-css">$tablet-width: 768px;
 $desktop-width: 1024px;
 
@@ -684,7 +684,7 @@ $desktop-width: 1024px;
 }
 </code></pre>
               <h3 class="heading heading--small">SCSS - Use Mixins</h3>
-              <p>Use mixins as named nested media queries like that:</p>
+              <p class="paragraph">Use mixins as named nested media queries like that:</p>
               <pre class="language-css"><code class="language-css">p {
   font-size: 16px;
 
