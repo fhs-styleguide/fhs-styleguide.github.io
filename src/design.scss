@@ -48,18 +48,21 @@ $logo-xtrasmall-width: 90px;
 /* Common elements */
 
 body {
+  color: $color-text;
   font-family: 'Open Sans', sans-serif;
   font-weight: $font-weight-normal;
   line-height: 1.45;
-  color: $color-text;
+  margin: 0;
 }
 
 .link {
-  text-decoration: none;
   color: $color-text-link;
+  text-decoration: none;
+
   &:visited {
     color: $color-text-link-visited;
   }
+
   &:hover {
     color: $color-text-link-hover;
     text-decoration: underline;
@@ -76,7 +79,7 @@ body {
 
 .container {
   display: flex;
-  padding: 1.6666%;
+  padding: 0;
   width: 100%;
 }
 

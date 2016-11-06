@@ -3,6 +3,7 @@
 $font-size-nav-big: 1.2em;
 $font-size-nav-small: .9em;
 $nav-icon-col: #b7bcc2;
+$logo-nav-size: 200px;
 
 nav {
   border: 1px solid $porcelain;
@@ -19,6 +20,7 @@ nav {
     display: block;
     margin: 0 auto;
     margin-bottom: .8em;
+    width: $logo-nav-size;
   }
 
   .p--nav {
@@ -26,6 +28,7 @@ nav {
     text-align: center;
   }
 }
+
 
 .main-category {
   border-top: 1px solid $porcelain;

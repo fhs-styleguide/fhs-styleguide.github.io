@@ -3,14 +3,15 @@
  */
 /* Common elements */
 body {
+  color: black;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.45;
-  color: black; }
+  margin: 0; }
 
 .link {
-  text-decoration: none;
-  color: #2980B9; }
+  color: #2980B9;
+  text-decoration: none; }
   .link:visited {
     color: #E74C3C; }
   .link:hover {
@@ -27,7 +28,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.6666%;
+  padding: 0;
   width: 100%; }
 
 .container__nav {
