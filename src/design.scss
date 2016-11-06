@@ -18,7 +18,7 @@ $color-text: black;
 $color-text-weak: $mine-shaft;
 $color-text-strong: black;
 $color-text-heading: $pickled-bluewood;
-$color-text-invert: black;
+$color-text-invert: white;
 $color-text-link: $mariner;
 $color-text-link-visited: $cinnabar;
 $color-text-link-hover: darken($cinnabar, 10%);
@@ -42,8 +42,8 @@ $font-weight-bold: 700;
 $rect-width: 142px;
 $rect-height: 50px;
 
-$logo-big: 300px;
-$logo-xtrasmall: 90px;
+$logo-big-width: 300px;
+$logo-xtrasmall-width: 90px;
 
 /* Common elements */
 
@@ -186,50 +186,24 @@ body {
 .logo--minClearSpace {
   display: block;
   height: auto;
-  width: $logo-big;
+  width: $logo-big-width;
+  margin: 0 auto;
 }
 
 .logo--xtrasmall {
-  width: $logo-xtrasmall;
-}
-
-.flex-container.logo--colors {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.div--rect  {
-  margin-right: 1em;
-  width: 142px;
-}
-
-.rect {
-  height: $rect-height;
-  text-align: center;
-  width: $rect-width;
-}
-
-.rect--pickled-bluewood {
-  background: $pickled-bluewood;
-}
-
-.rect--curious-blue {
-  background: $curious-blue;
-}
-
-.rect--cinnabar {
-  background: $cinnabar;
+  display: block;
+  width: $logo-xtrasmall-width;
+  margin: 0 auto;
 }
 
 .logo--inpropper1 {
-  height: $logo-big / 2;
-  width: $logo-big;
+  height: $logo-big-width / 2;
+  width: $logo-big-width;
 }
 
 .logo--inpropper2 {
-  height: $logo-big / 2;
-  width: $logo-big / 3;
+  height: $logo-big-width / 2;
+  width: $logo-big-width / 3;
 }
 
 /* Lists */
@@ -275,6 +249,10 @@ body {
 
 .bg-color--mine-shaft {
   background-color: $mine-shaft;
+}
+
+.text-color--inverted {
+  color: $color-text-invert;
 }
 
 /* Panel */

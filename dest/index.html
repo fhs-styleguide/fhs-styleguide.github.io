@@ -61,12 +61,12 @@
             <h3 class="heading heading--small">Primary Colors</h3>
             Our complete design relies on these colors.
             <div class="flex-container">
-              <div class="item bg-color bg-color--primary panel panel--small">$pickled-bluewood: #2C3E50;</div>
-              <div class="item bg-color bg-color--accent panel panel--small">$cinnabar: #E74C3C;</div>
+              <div class="item bg-color bg-color--primary panel panel--small text-color--inverted">$pickled-bluewood: #2C3E50;</div>
+              <div class="item bg-color bg-color--accent panel panel--small text-color--inverted">$cinnabar: #E74C3C;</div>
               <div class="item bg-color panel panel--small">$porcelain: #ECF0F1;</div>
-              <div class="item bg-color bg-color--shade panel panel--small">$curious-blue: #3498DB;</div>
-              <div class="item bg-color bg-color--mariner panel panel--small">$mariner: #2980B9;</div>
-              <div class="item bg-color bg-color--mine-shaft panel panel--small">$mine-shaft: #333333;</div>
+              <div class="item bg-color bg-color--shade panel panel--small text-color--inverted">$curious-blue: #3498DB;</div>
+              <div class="item bg-color bg-color--mariner panel panel--small text-color--inverted">$mariner: #2980B9;</div>
+              <div class="item bg-color bg-color--mine-shaft panel panel--small text-color--inverted">$mine-shaft: #333333;</div>
             </div>
             <pre><code class="language-css">.testclass {
   backgroundcolor: $porcelain;
@@ -296,49 +296,44 @@
           <h2 class="heading heading--large">Logo</h2>
           <p>This section contains the Logo Usage Guidelines for Dabilu Sports.</p>
           <h3 class="heading heading--medium">Logo Artwork</h3>
-          <img class="logo logo--big" src="../img/Dabilu_Logo_V2.jpg" alt="Dabilu Sports Logo">
+          <div class="section">
+            <img class="logo--big" src="../img/Dabilu_Logo_V2.jpg" alt="Dabilu Sports Logo">
+          </div>
           <p>The Dabilu Sports Logo is comprised of the two laurel leafs on the left and right side, the three stars in the
             middle on top (mark) and the Dabilu Sports lettering (logotype).</p>
-          <br>
           <p>The logotype is custom designed lettering and should never be replaced by a font or any other type.</p>
-          <br>
           <p>The mark and logotype must never be used seperately!</p>
           <h3 class="heading heading--medium">Color</h3>
           <p>When color is an option the following colors must be used (usage as shown in the logo image above):</p>
-          <div class="flex-container logo--colors">
-            <div class="div div--rect">
-              <canvas class="rect rect--pickled-bluewood"></canvas>
-              <p>$pickled-bluewood</p>
-              <p>#2C3E50</p>
-            </div>
-            <div class="div div--rect">
-              <canvas class="rect rect--curious-blue"></canvas>
-              <p>$curious-blue</p>
-              <p>#3498DB</p>
-            </div>
-            <div class="div div--rect">
-              <canvas class="rect rect--cinnabar"></canvas>
-              <p>$cinnabar</p>
-              <p>#E74C3C</p>
-            </div>
+          <div class="section flex-container">
+            <div class="item bg-color bg-color--primary panel panel--small text-color--inverted">$pickled-bluewood: #2C3E50;</div>
+            <div class="item bg-color bg-color--shade panel panel--small text-color--inverted">$curious-blue: #3498DB;</div>
+            <div class="item bg-color bg-color--accent panel panel--small text-color--inverted">$cinnabar: #E74C3C;</div>
           </div>
+          <p class="note">You can find all the available colors in the <a class="link" href="#brand-guide__colors">Colors section</a>.</p>
           <h3 class="heading heading--medium">Size</h3>
           <p>The dimensions of the artwork have been selected accordingly and should never be altered. Examples below show improper
             usage:
           </p>
-          <img class="logo logo--inpropper1" src="../img/Dabilu_Logo_inpropper.jpg" alt="Dabilu Sports Logo">
-          <img class="logo logo--inpropper2" src="../img/Dabilu_Logo_inpropper.jpg" alt="Dabilu Sports Logo">
+          <div class="section flex-container">
+            <img class="logo logo--inpropper1" src="../img/Dabilu_Logo_inpropper.jpg" alt="Dabilu Sports Logo">
+            <img class="logo logo--inpropper2" src="../img/Dabilu_Logo_inpropper.jpg" alt="Dabilu Sports Logo">
+          </div>
           <h3 class="heading heading--medium">Minimum Size</h3>
           <p>For maximum performance, it is recommended that the minimum size for reproduction of the artwork is 90 pixels in
             width, whilst retaining the original set dimensions. This roughly equates to 24mm across on paper.</p>
-          <img class="logo logo--xtrasmall" src="../img/Dabilu_Logo_V2.jpg" alt="Dabilu Sports Logo">
+          <div class="section">
+            <img class="logo logo--xtrasmall" src="../img/Dabilu_Logo_V2.jpg" alt="Dabilu Sports Logo">
+          </div>
           <h3 class="heading heading--medium">Minimum Clear Space</h3>
           <p>To protect the integrity of the Dabilu Sports brand and to achieve maximum recognition, it is important for assisting
             graphical elements, or other company logos, to not be in direct contact with the Dabilu Sports logo artwork.</p>
           <br>
-          <p>By visually imagining a containing box around the artwork, any assisting elements should be at least a "D's" width
+          <p>By visually imagining a containing box around the artwork, any assisting elements should be at least a "D"s width
             away from the logo artwork.</p>
-          <img class="logo logo--minClearSpace" src="../img/Dabilu_Logo_minClearSpace.jpg" alt="Dabilu Sports Logo">
+          <div class="section">
+            <img class="logo logo--minClearSpace" src="../img/Dabilu_Logo_minClearSpace.jpg" alt="Dabilu Sports Logo">
+          </div>
         </section>
       </section>
       <section id="CSS">

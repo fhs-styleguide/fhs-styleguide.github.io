@@ -111,38 +111,13 @@ body {
 .logo--minClearSpace {
   display: block;
   height: auto;
-  width: 300px; }
+  width: 300px;
+  margin: 0 auto; }
 
 .logo--xtrasmall {
-  width: 90px; }
-
-.flex-container.logo--colors {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start; }
-
-.div--rect {
-  margin-right: 1em;
-  width: 142px; }
-
-.rect {
-  height: 50px;
-  text-align: center;
-  width: 142px; }
-
-.rect--pickled-bluewood {
-  background: #2C3E50; }
-
-.rect--curious-blue {
-  background: #3498DB; }
-
-.rect--cinnabar {
-  background: #E74C3C; }
+  display: block;
+  width: 90px;
+  margin: 0 auto; }
 
 .logo--inpropper1 {
   height: 150px;
@@ -186,6 +161,9 @@ body {
 
 .bg-color--mine-shaft {
   background-color: #333333; }
+
+.text-color--inverted {
+  color: white; }
 
 /* Panel */
 .panel {
