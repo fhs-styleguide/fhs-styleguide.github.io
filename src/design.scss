@@ -43,6 +43,7 @@ $rect-width: 142px;
 $rect-height: 50px;
 
 $logo-big-width: 300px;
+$logo-medium-width: 180px;
 $logo-xtrasmall-width: 90px;
 
 /* Common elements */
@@ -76,7 +77,7 @@ body {
 
 .container {
   display: flex;
-  padding: 1.6666%;
+  padding: 0;
   width: 100%;
 }
 
@@ -187,6 +188,10 @@ body {
   height: auto;
   width: $logo-big-width;
   margin: 0 auto;
+}
+
+.logo--medium {
+  width: $logo-medium-width;
 }
 
 .logo--xtrasmall {
