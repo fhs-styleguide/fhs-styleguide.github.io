@@ -17,6 +17,9 @@ body {
     color: #d62c1a;
     text-decoration: underline; }
 
+p {
+  margin: 1em 0; }
+
 /* Introduction */
 .list--disc {
   list-style-type: disc;
