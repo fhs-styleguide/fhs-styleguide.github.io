@@ -64,6 +64,7 @@
             <li>Ensure that the public has the best possible experience when interacting with our websites.
         </ul>
       </section>
+      <br>
       <section id="brand-guide__colors">
         <h2 class="heading heading--large">Colors</h2>
         <p class="paragraph">The primary brand colors are used to represent Dabilu Sports in public and must reflect the Dabilu Sports brand.
@@ -354,7 +355,7 @@
         <section id="CSS__code-style">
           <h3 class="heading heading--medium">Code Style</h3>
           (S)CSS is the main language for styling Dabidu's website. In order to maintain good code readability and ensure that the
-          CSS code is written in a consistent way, some rules need to be followed:
+          (S)CSS code is written in a consistent way, some rules need to be followed:
           <ul class="list list--unordered">
             <li class="list__item"><strong class="font-weight-bold">Indentation:</strong> Two spaces must be used. This ensures that code renders
               the same in every environment.</li>
@@ -388,7 +389,7 @@
             <li class="list__item"><strong class="font-weight-bold">Files:</strong> Use UTF-8 encoding and add a new line at the end of the file.</li>
             <li class="list__item"><strong class="font-weight-bold">Quotations marks:</strong> Use single 'quotation marks' when possible.</li>
           </ul>
-          <p class="note">While some of these rules are checked through linting, as described in section <a class="link" href="CSS__code-style__pre-processors">Pre-Processors"</a>,
+          <p class="note">While some of these rules are checked through linting, as described in section <a class="link" href="CSS__code-style__pre-processors">Pre-Processors</a>,
             the programmer must not solely rely on linting, but keep the rules in mind and follow them thoroughly.</p>
           <h4 class="heading heading--small">File Structure</h4>
           <p class="paragraph">TODO: TO BE DONE</p>
@@ -409,14 +410,14 @@
         </section>
         <section id="CSS__class-naming">
           <h3 class="heading heading--medium">Class Naming</h3>
-          <div>
-            Our styleguide follows the Block, Element, Modifier Architecture. Every CSS class has to be named according to the following
+          <p class="paragraph">Our styleguide follows the Block, Element, Modifier Architecture. Every CSS class has to be named according to the following
             rules. This section is a citation from: <a href="http://getbem.com/naming/" class="link link_external">http://getbem.com/naming/</a>
-          </div>
+          </p>
           <h4 class="heading heading--small">Block</h4>
-          Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other,
+          <p class="paragraph">Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other,
           semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation
           (such as controllers or models) can be blocks as well.
+          </p>
           <div class="section">
             <div class="panel">
               <h4 class="heading heading--small">Naming</h4>
@@ -436,16 +437,18 @@
             </div>
           </div>
           <h4 class="heading heading--small">Element</h4>
-          Parts of a block and have no standalone meaning. Any element is semantically tied to its block.
+          <p class="paragraph">Parts of a block and have no standalone meaning. Any element is semantically tied to its block.
+          </p>
           <div class="section">
             <div class="panel">
               <h4 class="heading heading--small">Naming</h4>
-              Element names may consist of Latin letters, digits, dashes and underscores. CSS class is formed as block name plus two underscores
-              plus element name: .block__elem
+              <p class="paragraph">Element names may consist of Latin letters, digits, dashes and underscores. CSS class is formed as block name plus two underscores
+              plus element name: .block__elem</p>
             </div>
             <div class="panel">
               <h4 class="heading heading--small">HTML</h4>
-              Any DOM node within a block can be an element. Within a given block, all elements are semantically equal.
+              <p class="paragraph">Any DOM node within a block can be an element. Within a given block, all elements are semantically equal.
+              </p>
               <pre><code class="language-markup">&lt;div class="block">
   ...
   &lt;span class="block__elem">...&lt;/span>
@@ -464,11 +467,11 @@
                   No dependency on other blocks/elements on a page
                 </li>
               </ul>
-              <p>Good</p>
+              <p class="font-weight-bold">Good</p>
               <pre><code class="language-css">.block__elem {
   color: #042;
 }</code></pre>
-              <p>Bad</p>
+              <p class="font-weight-bold">Bad</p>
               <pre><code class="language-css">.block .block__elem {
   color: #042;
 }
@@ -480,41 +483,44 @@ div.block__elem {
 
           </div>
           <h4 class="heading heading--small">Modifier</h4>
-          Flags on blocks or elements. Use them to change appearance, behavior or state.
+          <p class="paragraph">Flags on blocks or elements. Use them to change appearance, behavior or state.
+          </p>
           <div class="section">
             <div class="panel">
               <h4 class="heading heading--small">Naming</h4>
-              Modifier names may consist of Latin letters, digits, dashes and underscores. CSS class is formed as block’s or element’s
-              name plus two dashes: .block--mod or .block__elem--mod and .block--color-black with .block--color-red. Spaces
-              in complicated modifiers are replaced by dash.
+              <p class="paragraph">Modifier names may consist of Latin letters, digits, dashes and underscores. CSS class is formed as block’s or element’s
+                name plus two dashes: .block--mod or .block__elem--mod and .block--color-black with .block--color-red. Spaces
+                in complicated modifiers are replaced by dash.
+              </p>
             </div>
             <div class="panel">
               <h4 class="heading heading--small">HTML</h4>
-              Modifier is an extra class name which you add to a block/element DOM node. Add modifier classes only to blocks/elements they
+              <p class="paragraph">Modifier is an extra class name which you add to a block/element DOM node. Add modifier classes only to blocks/elements they
               modify, and keep the original class:
-              <p>Good</p>
+              </p>
+              <p class="font-weight-bold">Good</p>
               <pre><code class="language-markup">&lt;div class="block block--mod">
   ...
 &lt;/div>
 &lt;div class="block block--size-big block--shadow-yes">
   ...
 &lt;/div></code></pre>
-              <p>Bad</p>
+              <p class="font-weight-bold">Bad</p>
               <pre><code class="language-markup">&lt;div class="block--mod">
   ...
 &lt;/div></code></pre>
             </div>
             <div class="panel">
               <h4 class="heading heading--small">CSS</h4>
-              Use modifier class name as selector:
+              <p class="paragraph">Use modifier class name as selector:</p>
               <pre><code class="language-css">.block--hidden {
   ...
 }</code></pre>
-              To alter elements based on a block-level modifier:
+              <p class="paragraph">To alter elements based on a block-level modifier:</p>
               <pre><code class="language-css">.block--mod .block__elem {
   ...
 }</code></pre>
-              Element modifier:
+              <p class="paragraph">Element modifier:</p>
               <pre><code class="language-css">.block__elem--mod {
   ...
 }</code></pre>
@@ -550,7 +556,8 @@ div.block__elem {
         </section>
         <section id="component-library__lists">
           <h2 class="heading heading--large">Lists</h2>
-          If the ordering of the items you want to display is relevant, use an ordered list. Otherwise use an unordered list.
+          <p class="paragraph">If the ordering of the items you want to display is relevant, use an ordered list. Otherwise use an unordered list.
+          </p>
           <div class="flex-container section">
             <div class="panel panel--large">
               <h3 class="heading heading--medium">Ordered Lists</h3>
@@ -663,7 +670,6 @@ div.block__elem {
           <p class="paragraph">In order to write the cleanest and most readable code possible we use mixins. Mixins are groups of styles that
             can be reused throughout our code. One of the features of mixins is that they can use blocks of content which
             is especially usefull for media-queries.</p>
-          <br>
           <p class="paragraph">They should be written like this:</p>
           <div class="section ">
             <div class="panel">

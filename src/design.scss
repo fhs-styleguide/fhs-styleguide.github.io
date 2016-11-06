@@ -74,6 +74,10 @@ p {
   margin: 1em 0;
 }
 
+.paragraph {
+  margin: 1em 0;
+}
+
 /* Introduction */
 .list--disc {
   list-style-type: disc;
@@ -233,6 +237,7 @@ button {
 /* Lists */
 .list {
   list-style-position: outside;
+  margin-bottom: 1em;
   padding-left: 2em;
 }
 
@@ -434,6 +439,7 @@ button {
   background-color: $color-background;
   border-radius: 0.2em;
   padding: 0.5em;
+  margin: 0.5em 0 1.5em 0;
 }
 
 /* Note */
