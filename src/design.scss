@@ -39,7 +39,8 @@ $font-size-extra-small: 0.563em;
 $font-weight-normal: 400;
 $font-weight-bold: 700;
 
-$rect-size: 100px;
+$rect-width: 142px;
+$rect-height: 50px;
 
 $logo-big: 300px;
 $logo-xtrasmall: 90px;
@@ -195,13 +196,13 @@ body {
 
 .div--rect  {
   margin-right: 1em;
-  max-width: $rect-size;
+  width: 142px;
 }
 
 .rect {
-  height: $rect-size;
+  height: $rect-height;
   text-align: center;
-  width: $rect-size;
+  width: $rect-width;
 }
 
 .rect--pickled-bluewood {

@@ -117,12 +117,12 @@ body {
 
 .div--rect {
   margin-right: 1em;
-  max-width: 100px; }
+  width: 142px; }
 
 .rect {
-  height: 100px;
+  height: 50px;
   text-align: center;
-  width: 100px; }
+  width: 142px; }
 
 .rect--pickled-bluewood {
   background: #2C3E50; }
