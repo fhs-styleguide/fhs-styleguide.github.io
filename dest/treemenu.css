@@ -18,6 +18,9 @@ body {
     color: #d62c1a;
     text-decoration: underline; }
 
+p {
+  margin: 1em 0; }
+
 /* Introduction */
 .list--disc {
   list-style-type: disc;
@@ -114,6 +117,9 @@ body {
   height: auto;
   width: 300px;
   margin: 0 auto; }
+
+.logo--medium {
+  width: 180px; }
 
 .logo--xtrasmall {
   display: block;
@@ -342,7 +348,6 @@ nav {
   font-size: 1.2em;
   font-weight: bold; }
   .main-category p {
-    line-height: 3em;
     padding-left: 1em; }
   .main-category ul {
     background: #ECF0F1;
@@ -369,7 +374,8 @@ nav {
   color: #b7bcc2;
   float: right;
   font-size: .5em;
-  padding-right: 3em; }
+  padding-right: 3em;
+  padding-top: 1em; }
 
 .nav-icon--open::after {
   content: '\25BC'; }
