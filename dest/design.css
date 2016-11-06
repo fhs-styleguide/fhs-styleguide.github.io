@@ -70,9 +70,16 @@ body {
 .font-size-xs {
   font-size: 0.563em; }
 
+.font-weight-normal {
+  font-weight: 400; }
+
+.font-weight-bold {
+  font-weight: 700; }
+
 .heading {
   color: #2C3E50;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  text-indent: 0; }
 
 .heading--extra-large {
   font-size: 3.157em; }
@@ -86,10 +93,14 @@ body {
 .heading--small {
   font-size: 1.333em; }
 
-.typeface-body {
+.panel--borderless {
+  padding: 1.66666%;
+  margin: 1.66666%; }
+
+.typeface__body {
   font-family: 'Open Sans', sans-serif; }
 
-.typeface-headings {
+.typeface__headings {
   font-family: 'Montserrat', sans-serif; }
 
 .glyph {
@@ -180,13 +191,6 @@ body {
 .panel {
   padding: 1.66666%;
   margin: 1.66666%;
-  border-radius: 0.2em;
-  border: 1px solid black; }
-
-/* TODO: Proposal: We could move the border stuff from panel to 
- * panel--border, so we can have panels without borders as well.
- */
-.panel--border {
   border-radius: 0.2em;
   border: 1px solid black; }
 
@@ -320,8 +324,9 @@ body {
 .note {
   background-color: #ECF0F1;
   border-radius: 0.2em;
-  padding: 1em;
+  padding: 1em 1em 1em 2em;
   margin: 0.5em 0;
+  text-indent: -1em;
   width: auto; }
   .note:before {
     color: #E74C3C;

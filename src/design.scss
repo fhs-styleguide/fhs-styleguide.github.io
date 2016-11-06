@@ -164,11 +164,16 @@ body {
   font-size: $font-size-large;
 }
 
-.typeface-body {
+.panel--borderless {
+  padding: 1.66666%;
+  margin: 1.66666%;
+}
+
+.typeface__body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.typeface-headings {
+.typeface__headings {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -277,13 +282,6 @@ body {
 .panel{
   padding: 1.66666%;
   margin: 1.66666%;
-  border-radius: 0.2em;
-  border: 1px solid black;
-}
-/* TODO: Proposal: We could move the border stuff from panel to 
- * panel--border, so we can have panels without borders as well.
- */
-.panel--border {
   border-radius: 0.2em;
   border: 1px solid black;
 }
