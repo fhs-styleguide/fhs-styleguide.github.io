@@ -258,7 +258,7 @@ button {
 }
 
 /* Form Elements */
-.form{
+.form {
   margin: 10px 0;
   padding: 20px 25px 15px 25px;
   border-radius: 6px;
@@ -267,7 +267,7 @@ button {
   box-sizing: border-box;
 }
 
-.form__flex{
+.form__flex {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -275,49 +275,48 @@ button {
   margin: 10px 0;
 }
 
-.form__label{
+.form__label {
   display: block;
   margin-bottom: 4px;
 }
 
-.form__float{
+.form__float {
   flex: 1 1 auto;
   margin: 0 20px 15px 0;
   float: left;
 }
 
-.form__input{
-   height: 34px;
-   width: 100%;
-   box-sizing: border-box;
-   padding: 0 10px 0 10px;
-   border: 2px solid $mine-shaft;
-   border-radius: $input-radius;
-   padding-right: 20px;
-
-   transition: all .25s ease;
+.form__input {
+  height: 34px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px 0 10px;
+  border: 2px solid $mine-shaft;
+  border-radius: $input-radius;
+  padding-right: 20px;
+  transition: all .25s ease;
   outline: none;
 
-  &:focus{
+  &:focus {
     box-shadow: 0 0 5px $color-border;
     border: 1px solid $color-border;
   }
 }
 
-.form__group{
-    display: block;
-    width: 100%;
+.form__group {
+  display: block;
+  width: 100%;
 }
 
-.form__input--focus{
-   border: 2px solid $pickled-bluewood;
+.form__input--focus {
+  border: 2px solid $pickled-bluewood;
 }
 
 .form__input--required {
   background: url(../img/required2.png) no-repeat 97.5% #fff;
   outline: none;
 
-  &:focus{
+  &:focus {
     box-shadow: 0 0 5px $color-border;
     border: 1px solid $color-border;
   }
@@ -328,7 +327,7 @@ button {
   background: url(../img/success.png) no-repeat 97.5% #fff;
   outline: none;
 
-  &:focus{
+  &:focus {
     box-shadow: 0 0 5px $curious-blue;
     border: 1px solid $curious-blue;
   }
@@ -339,14 +338,14 @@ button {
   background: url(../img/error.png) no-repeat 97.5% #fff;
   outline: none;
 
-  &:focus{
+  &:focus {
     box-shadow: 0 0 5px $cinnabar;
     border: 1px solid $cinnabar;
   }
 }
 
 
-.form__textarea{
+.form__textarea {
   appearance: none;
   box-sizing: border-box;
   border: 2px solid $mine-shaft;
@@ -359,46 +358,37 @@ button {
   width: 50%;
 }
 
-.form__checkbox--radio{
-    display: none;
+.form__checkbox--radio {
+  display: none;
 
-    &+::before{
-      display: inline-block;
-      width: 15px;
-      height: 15px;
-      content: '';
-      border-radius: 100%;
-      margin-right: 6px;
-      border: 1px solid $mine-shaft;
-      transition: background .25s ease;
-    }
+  &+::before {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    content: '';
+    border-radius: 100%;
+    margin-right: 6px;
+    border: 1px solid $mine-shaft;
+    transition: background .25s ease;
+  }
 
-    &:hover+::before, &:checked+::before {
-      display: inline-block;
-      width: 16px;
-      height: 16px;
-      border: 1px solid $mine-shaft;
-      background: $curious-blue;
-    }
+  &:hover+::before, &:checked+::before {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $mine-shaft;
+    background: $curious-blue;
+  }
 
-    &+label {
-      font-size: 1.2rem;
-      line-height: 1.5;
-      margin-right: 22px;
-      color: $mine-shaft;
-      font-weight: bold;
-      transition: all .25s ease;
-    }
-
+  &+label {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-right: 22px;
+    color: $mine-shaft;
+    font-weight: bold;
+    transition: all .25s ease;
+  }
 }
-
-
-
-/* Navigation */
-.navigation {
-
-}
-
 
 /* Background Colors */
 .bg-color {
