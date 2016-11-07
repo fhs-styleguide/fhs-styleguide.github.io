@@ -286,19 +286,18 @@ button {
   float: left;
 }
 
-.form__input{
-   height: 3.4em;
-   width: 100%;
-   box-sizing: border-box;
-   padding: 0 0.7em 0 0.7em;
-   border: 0.2em solid $mine-shaft;
-   border-radius: $input-radius;
-   padding-right: 1.2em;
-
-   transition: all .25s ease;
+.form__input {
+  height: 3.4em;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0.7em 0 0.7em;
+  border: 0.2em solid $mine-shaft;
+  border-radius: $input-radius;
+  padding-right: 1.2em;
+  transition: all .25s ease;
   outline: none;
 
-  &:focus{
+  &:focus {
     box-shadow: 0 0 1.6em $color-border;
     border: 0.2em solid $color-border;
   }
@@ -317,7 +316,7 @@ button {
   background: url(../img/required2.png) no-repeat 97.5% #fff;
   outline: none;
 
-  &:focus{
+  &:focus {
     box-shadow: 0 0 1.6em $color-border;
     border: 0.2em solid $color-border;
   }
@@ -328,7 +327,7 @@ button {
   background: url(../img/success.png) no-repeat 97.5% #fff;
   outline: none;
 
-  &:focus{
+  &:focus {
     box-shadow: 0 0 1.6em $curious-blue;
     border: 0.2em solid $curious-blue;
   }
@@ -339,7 +338,7 @@ button {
   background: url(../img/error.png) no-repeat 97.5% #fff;
   outline: none;
 
-  &:focus{
+  &:focus {
     box-shadow: 0 0 1.6em $cinnabar;
     border: 0.2em solid $cinnabar;
   }
@@ -359,7 +358,7 @@ button {
   width: 50%;
   padding: 0.5em 0.7em;
 
-  &:focus{
+  &:focus {
     box-shadow: 0 0 1.6em $color-border;
     border: 0.2em solid $color-border;
   }
@@ -368,34 +367,33 @@ button {
 .form__checkbox--radio {
   display: none;
 
-    &+::before{
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-      content: '';
-      border-radius: 100%;
-      margin-right: 0.333em;
-      border: 1px solid $mine-shaft;
-      transition: background .25s ease;
-    }
+  &+::before {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    content: '';
+    border-radius: 100%;
+    margin-right: 0.333em;
+    border: 1px solid $mine-shaft;
+    transition: background .25s ease;
+  }
 
-    &:hover+::before, &:checked+::before {
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-      border: 0.05em solid $mine-shaft;
-      background: $curious-blue;
-    }
+  &:hover+::before, &:checked+::before {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 0.05em solid $mine-shaft;
+    background: $curious-blue;
+  }
 
-    &+label {
-      font-size: 1.2rem;
-      line-height: 1.5;
-      margin-right: 1.2em;
-      color: $mine-shaft;
-      font-weight: bold;
-      transition: all .25s ease;
-    }
-
+  &+label {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-right: 1.2em;
+    color: $mine-shaft;
+    font-weight: bold;
+    transition: all .25s ease;
+  }
 }
 
 /* Background Colors */
