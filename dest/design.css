@@ -36,6 +36,8 @@ body {
 
 .container__nav {
   width: 25%; }
+  .container__nav--full {
+    width: 100%; }
 
 .container__main {
   width: 75%;

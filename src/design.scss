@@ -92,6 +92,10 @@ body {
 
 .container__nav {
   width: 25%;
+  
+  &--full {
+    width: 100%;
+  }
 }
 
 .container__main {

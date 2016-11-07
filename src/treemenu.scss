@@ -27,6 +27,10 @@ nav {
     font-size: $font-size-small;
     text-align: center;
   }
+
+  &--full {
+    width: 100%;
+  }
 }
 
 
@@ -92,6 +96,3 @@ nav {
     content: '\25B2';
   }
 }
-
-
-
