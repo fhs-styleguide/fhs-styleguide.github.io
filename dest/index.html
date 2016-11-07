@@ -57,7 +57,7 @@
         <p class="paragraph">As Dabilu Sports is currently in the process of transforming from a small startup company to a bigger corporation, we felt
           the need to develop a Styleguide for our brand. It consists of three main parts: the brand guide, the defined CSS
           methodologies and the component library to be used.</p>
-        <h3 class="heading heading--medium">The aims of this Styleguide are:</h3>
+        <h4 class="heading heading--small">The aims of this Styleguide are:</h4>
         <ul class="list list--disc">
           <li>Provide our developers, designers and copywriters a consistent structure and orientation when creating new components
             for our branded websites.
@@ -351,9 +351,9 @@
         </section>
       </section>
       <section id="CSS">
-        <h2 class="heading heading--large">CSS Methodology</h2>
+        <h1 class="heading heading--extra-large">CSS Methodology</h1>
         <section id="CSS__code-style">
-          <h3 class="heading heading--medium">Code Style</h3>
+          <h2 class="heading heading--large">Code Style</h2>
           (S)CSS is the main language for styling Dabidu's website. In order to maintain good code readability and ensure that the
           (S)CSS code is written in a consistent way, some rules need to be followed:
           <ul class="list list--unordered">
@@ -391,7 +391,7 @@
           </ul>
           <p class="note">While some of these rules are checked through linting, as described in section <a class="link" href="CSS__code-style__pre-processors">Pre-Processors</a>,
             the programmer must not solely rely on linting, but keep the rules in mind and follow them thoroughly.</p>
-          <h4 class="heading heading--small">File Structure</h4>
+          <h3 class="heading heading--medium">File Structure</h3>
           <p class="paragraph">To ensure a consistency, the file structure of websites should follow a basic guideline. As way of example, the file structure of this
             CSS styleguide is explained in this section.</p>
           <div class="section flex-container">
@@ -412,27 +412,27 @@
             </div>
             <img class="panel" src="../img/file-structure_overview.png" alt="File Structure Overview" width="250" height="269">
           </div>
-          <h4 class="heading heading--small" id="CSS__code-style__pre-processors">Pre-Processors</h4>
+          <h3 class="heading heading--medium" id="CSS__code-style__pre-processors">Pre-Processors</h3>
           <p class="paragraph">The building process of the CSS files makes use of <a href="http://gulpjs.com/" class="link link--external">gulp</a>            and <a href="http://postcss.org/" class="link link--external">PostCSS</a> and consists of several steps:
-            <ul class="list list--ordered">
-              <li class="list__item">The SCSS files are linted using <a href="https://www.npmjs.com/package/stylelint" class="link link--external">stylelint</a>,
-                enforcing consistent conventions throught all SCSS files.
-              </li>
-              <li class="list__item">The SCSS files are converted to CSS files through the use of <a href="https://www.npmjs.com/package/gulp-sass"
-                  class="link link--external">gulp-sass</a>, which is a wrapper around node-sass, which in turn utilizes libsass,
-                which is a fast C/C++ port of the Sass CSS precompiler.
-              </li>
-              <li class="list-item" class="link">The CSS files are now analyzed and modifed by <a href="https://github.com/postcss/autoprefixer" class="link link--external">Autoprefixer</a>                in order to automatically add vendor prefixes to the existing CSS.
-              </li>
-            </ul>
           </p>
+          <ol class="list list--ordered">
+            <li class="list__item">The SCSS files are linted using <a href="https://www.npmjs.com/package/stylelint" class="link link--external">stylelint</a>,
+              enforcing consistent conventions throught all SCSS files.
+            </li>
+            <li class="list__item">The SCSS files are converted to CSS files through the use of <a href="https://www.npmjs.com/package/gulp-sass"
+                class="link link--external">gulp-sass</a>, which is a wrapper around node-sass, which in turn utilizes libsass,
+              which is a fast C/C++ port of the Sass CSS precompiler.
+            </li>
+            <li class="list-item" class="link">The CSS files are now analyzed and modifed by <a href="https://github.com/postcss/autoprefixer" class="link link--external">Autoprefixer</a>                in order to automatically add vendor prefixes to the existing CSS.
+            </li>
+          </ol>
         </section>
         <section id="CSS__class-naming">
-          <h3 class="heading heading--medium">Class Naming</h3>
+          <h2 class="heading heading--large">Class Naming</h2>
           <p class="paragraph">Our styleguide follows the Block, Element, Modifier Architecture. Every CSS class has to be named according to the following
             rules. This section is a citation from: <a href="http://getbem.com/naming/" class="link link--external">http://getbem.com/naming/</a>
           </p>
-          <h4 class="heading heading--small">Block</h4>
+          <h3 class="heading heading--medium">Block</h3>
           <p class="paragraph">Encapsulates a standalone entity that is meaningful on its own. While blocks can be nested and interact with each other,
           semantically they remain equal; there is no precedence or hierarchy. Holistic entities without DOM representation
           (such as controllers or models) can be blocks as well.
@@ -455,7 +455,7 @@
 }</code></pre>
             </div>
           </div>
-          <h4 class="heading heading--small">Element</h4>
+          <h3 class="heading heading--medium">Element</h3>
           <p class="paragraph">Parts of a block and have no standalone meaning. Any element is semantically tied to its block.
           </p>
           <div class="section">
@@ -501,7 +501,7 @@ div.block__elem {
             </div>
 
           </div>
-          <h4 class="heading heading--small">Modifier</h4>
+          <h3 class="heading heading--medium">Modifier</h3>
           <p class="paragraph">Flags on blocks or elements. Use them to change appearance, behavior or state.
           </p>
           <div class="section">
@@ -550,7 +550,7 @@ div.block__elem {
       <section id="component-library">
         <h1 class="heading heading--extra-large">Component Library</h1>
         <section id="component-library__headings">
-          <h3 class="heading heading--medium">Headings</h3>
+          <h2 class="heading heading--large">Headings</h2>
           <p class="paragraph">Take a look at the <a href="#brand-guide__typography" class="link">typography section</a> for additional information
             on font sizes.</p>
           <div class="flex-container section ">
@@ -618,14 +618,14 @@ div.block__elem {
 
 
         <section id="component-library__form-elements">
-          <h3 class="heading heading--medium">Form Elements</h3>
-          <p>Our Forms have to be in a really good shape, just like our Brand Models.
-            <br /> Here is the Guide on how to implement all kinds of Form Elements</p>
+          <h2 class="heading heading--large">Form Elements</h2>
+          <p class="paragraph">Our forms have to be in a really good shape, just like our brand models. 
+            Here is the guide on how to implement all kinds of form elements.</p>
 
           <div class="section">
             <div class="panel">
-              <h4 class="heading heading--small">Input</h4>
-              <p>Text Input fields</p>
+              <h3 class="heading heading--medium">Input Fields</h3>
+              <p class="paragraph">Basic text input fields should be styled as follows:</p>
 
               <form class="form">
                 <div class="form__flex">
@@ -684,10 +684,10 @@ div.block__elem {
 
           <div class="section">
             <div class="panel">
-              <h4 class="heading heading--small">Textarea</h4>
-              <p>Textarea</p>
+              <h3 class="heading heading--medium">Textarea</h3>
+              <p class="paragraph">Textareas should be styled as follows:</p>
               <form class="form">
-                <label for="textarea" class="form__label">Place your thoughts</label>
+                <label for="textarea" class="form__label">Place for your thoughts</label>
                 <textarea class="form__textarea" id="textarea" type="text" rows="6" cols="100" placeholder="Place for your thoughts"></textarea>
               </form>
             <pre><code class="language-markup">&lt;form class="form">
@@ -699,8 +699,8 @@ div.block__elem {
 
           <div class="section">
             <div class="panel">
-              <h4 class="heading heading--small">Radio Checkboxes</h4>
-              <p>Checkboxes</p>
+              <h3 class="heading heading--medium">Radio Checkboxes</h3>
+              <p class="paragraph">Radio checkboxes should follow the following style guideline:</p>
               <form class="form">
                 <fieldset>
                   <label class="form__label">Do you like our Styleguide ?</label>
@@ -733,8 +733,7 @@ div.block__elem {
           </div>
         <div class="section">
           <div class="panel">
-            <h4 class="heading heading--small">Select Fields</h4>
-            <p>Select Fields</p>
+            <h3 class="heading heading--medium">Select Fields</h3>
             <form class="form">
               <label for="select" class="form__label">Select Field:</label>
               <select class="form__select">
@@ -762,7 +761,7 @@ div.block__elem {
 
         <section id="component-library__links">
           <h2 class="heading heading--medium">Links</h2>
-          We differentiate between two different types of links.
+          <p class="paragraph">We differentiate between two different types of links.</p>
           <ul class="list list--unordered">
             <li class="list__item">An internal link, which is a link that refers to a page on our website.</li>
             <li class="list__item">An external link, which is a link that refers to a page other than our website.</li>
@@ -783,10 +782,10 @@ div.block__elem {
 
         <section id="component-library__buttons">
           <h2 class="heading heading--medium">Buttons</h2>
-          Use the button classes on &lt;button> or &lt;input> elements.
+          <p class="paragraph">Use the button classes on &lt;button> or &lt;input> elements.</p>
           <div class="section">
             <div class="panel">
-              <h3 class="heading heading--small">Button</h3>
+              <h3 class="heading heading--medium">Button</h3>
               <button class="btn">Button</button>
               <input class="btn" type="button" value="Input" />
               <input class="btn" type="submit" value="Submit" />
@@ -797,7 +796,7 @@ div.block__elem {
           </div>
           <div class="section">
             <div class="panel">
-              <h3 class="heading heading--small">Button Options</h3>
+              <h3 class="heading heading--medium">Button Options</h3>
               <button class="btn btn--primary">Primary</button>
               <button class="btn btn--success">Success</button>
               <button class="btn btn--info">Info</button>
@@ -812,7 +811,7 @@ div.block__elem {
           </div>
           <div class="section">
             <div class="panel">
-              <h3 class="heading heading--small">Button Sizes</h3>
+              <h3 class="heading heading--medium">Button Sizes</h3>
               <button class="btn btn--xs">Extra Small</button><br/>
               <button class="btn btn--s">Small</button><br/>
               <button class="btn btn--m">Medium</button><br/>
@@ -831,14 +830,14 @@ div.block__elem {
           </div>
         </section>
         <section id="component-library__media-blocks">
-          <h2 class="heading heading--medium">Media Blocks</h2>
+          <h2 class="heading heading--large">Media Blocks</h2>
           <p class="paragraph">In order to write the cleanest and most readable code possible we use mixins. Mixins are groups of styles that
             can be reused throughout our code. One of the features of mixins is that they can use blocks of content which
             is especially usefull for media-queries.</p>
           <p class="paragraph">They should be written like this:</p>
           <div class="section ">
             <div class="panel">
-              <h3 class="heading heading--small">SCSS - Create Mixins</h3>
+              <h3 class="heading heading--medium">SCSS - Create Mixins</h3>
               <p class="paragraph">Create mixins in order to be able to use named nested media queries:</p>
               <pre class="language-css"><code class="language-css">$tablet-width: 768px;
 $desktop-width: 1024px;
@@ -855,7 +854,7 @@ $desktop-width: 1024px;
   }
 }
 </code></pre>
-              <h3 class="heading heading--small">SCSS - Use Mixins</h3>
+              <h3 class="heading heading--medium">SCSS - Use Mixins</h3>
               <p class="paragraph">Use mixins as named nested media queries like that:</p>
               <pre class="language-css"><code class="language-css">p {
   font-size: 16px;
@@ -873,8 +872,8 @@ $desktop-width: 1024px;
         </section>
 
         <section id="component-library__navigation">
-          <h2 class="heading heading--medium">Navigation</h2>
-          <p>To ensure a consistent look and feel, the following type of navigation should be used when applicable.</p>
+          <h2 class="heading heading--large">Navigation</h2>
+          <p class="paragraph">To ensure a consistent look and feel, the following type of navigation should be used when applicable.</p>
           <div class="section">
             <div class="panel">
               <nav class="container__nav container__nav--full" style="background:white;">
