@@ -501,7 +501,6 @@ nav {
     border-top: 1px solid #ECF0F1;
     display: none;
     overflow: hidden;
-    overflow-y: scroll;
     padding-bottom: .5em;
     padding-left: 1.5em;
     padding-top: .5em; }
