@@ -291,19 +291,19 @@ button {
 }
 
 .form__input {
-  height: 34px;
+  height: 3.4em;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 10px 0 10px;
-  border: 2px solid $mine-shaft;
+  padding: 0 0.7em 0 0.7em;
+  border: 0.2em solid $mine-shaft;
   border-radius: $input-radius;
-  padding-right: 20px;
+  padding-right: 1.2em;
   transition: all .25s ease;
   outline: none;
 
   &:focus {
-    box-shadow: 0 0 5px $color-border;
-    border: 1px solid $color-border;
+    box-shadow: 0 0 1.6em $color-border;
+    border: 0.2em solid $color-border;
   }
 }
 
@@ -321,30 +321,30 @@ button {
   outline: none;
 
   &:focus {
-    box-shadow: 0 0 5px $color-border;
-    border: 1px solid $color-border;
+    box-shadow: 0 0 1.6em $color-border;
+    border: 0.2em solid $color-border;
   }
 }
 
 .form__input--valid {
-  border: 2px solid $curious-blue;
+  border: 0.2em solid $curious-blue;
   background: url(../img/success.png) no-repeat 97.5% #fff;
   outline: none;
 
   &:focus {
-    box-shadow: 0 0 5px $curious-blue;
-    border: 1px solid $curious-blue;
+    box-shadow: 0 0 1.6em $curious-blue;
+    border: 0.2em solid $curious-blue;
   }
 }
 
 .form__input--invalid {
-  border: 2px solid $cinnabar;
+  border: 0.2em solid $cinnabar;
   background: url(../img/error.png) no-repeat 97.5% #fff;
   outline: none;
 
   &:focus {
-    box-shadow: 0 0 5px $cinnabar;
-    border: 1px solid $cinnabar;
+    box-shadow: 0 0 1.6em $cinnabar;
+    border: 0.2em solid $cinnabar;
   }
 }
 
@@ -352,7 +352,7 @@ button {
 .form__textarea {
   appearance: none;
   box-sizing: border-box;
-  border: 2px solid $mine-shaft;
+  border: 0.2em solid $mine-shaft;
   border-radius: $input-radius;
   font-family: inherit;
   font-size: 1em;
@@ -360,6 +360,12 @@ button {
   resize: vertical;
   outline: 0;
   width: 50%;
+  padding: 0.5em 0.7em;
+
+  &:focus {
+    box-shadow: 0 0 1.6em $color-border;
+    border: 0.2em solid $color-border;
+  }
 }
 
 .form__checkbox--radio {
@@ -367,27 +373,27 @@ button {
 
   &+::before {
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 1em;
+    height: 1em;
     content: '';
     border-radius: 100%;
-    margin-right: 6px;
+    margin-right: 0.333em;
     border: 1px solid $mine-shaft;
     transition: background .25s ease;
   }
 
   &:hover+::before, &:checked+::before {
     display: inline-block;
-    width: 16px;
-    height: 16px;
-    border: 1px solid $mine-shaft;
+    width: 1em;
+    height: 1em;
+    border: 0.05em solid $mine-shaft;
     background: $curious-blue;
   }
 
   &+label {
     font-size: 1.2rem;
     line-height: 1.5;
-    margin-right: 22px;
+    margin-right: 1.2em;
     color: $mine-shaft;
     font-weight: bold;
     transition: all .25s ease;

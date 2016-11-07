@@ -40,9 +40,9 @@
             <ul>
               <li><a href="#component-library__headings">Headings</a></li>
               <li><a href="#component-library__lists">Lists</a></li>
+              <li><a href="#component-library__form-elements">Form Elements</a></li>
               <li><a href="#component-library__links">Links</a></li>
               <li><a href="#component-library__buttons">Buttons</a></li>
-              <li><a href="#component-library__form-elements">Form Elements</a></li>
               <li><a href="#component-library__media-blocks">Media Blocks</a></li>
             </ul>
           </li>
@@ -391,7 +391,26 @@
           <p class="note">While some of these rules are checked through linting, as described in section <a class="link" href="CSS__code-style__pre-processors">Pre-Processors</a>,
             the programmer must not solely rely on linting, but keep the rules in mind and follow them thoroughly.</p>
           <h4 class="heading heading--small">File Structure</h4>
-          <p class="paragraph">TODO: TO BE DONE</p>
+          <p class="paragraph">To ensure a consistency, the file structure of websites should follow a basic guideline. As way of example, the file structure of this
+            CSS styleguide is explained in this section.</p>
+          <div class="section flex-container">
+            <div class="panel panel--medium">
+              <p class="paragraph">In the main folder, the configuration files can be found:</p>
+              <ul class="list list--unordered">
+                <li class="list__item"><strong class="font-weight-bold">.gitignore:</strong> Specifies intentionally untracked files to ignore</li>
+                <li class="list__item"><strong class="font-weight-bold">.stylintrc.json:</strong> Contains the rules for the CSS linter. Must not be changed!</li>
+                <li class="list__item"><strong class="font-weight-bold">gulpfile.js:</strong> Configures gulp, the build system of choice for our front-end web development.</li>
+                <li class="list__item"><strong class="font-weight-bold">package.json:</strong> All used npm modules are specified here, making it easy for every developer to install the needed modules.</li>
+              </ul>
+              <p class="paragraph">Furthermore, there are 3 important folders:</p>
+              <ul class="list list--unordered">
+                <li class="list__item"><strong class="font-weight-bold">img:</strong> Contains all images which are used throught the website.</li>
+                <li class="list__item"><strong class="font-weight-bold">src:</strong> Contains the SCSS files, which can be edited by the developer.</li>
+                <li class="list__item"><strong class="font-weight-bold">dest:</strong> Herein the compiled CSS files can be found, which should not be edited manually! Furthermore, the HTML files are also in here.</li>
+              </ul>
+            </div>
+            <img class="panel" src="../img/file-structure_overview.png" alt="File Structure Overview" width="250" height="269">
+          </div>
           <h4 class="heading heading--small" id="CSS__code-style__pre-processors">Pre-Processors</h4>
           <p class="paragraph">The building process of the CSS files makes use of <a href="http://gulpjs.com/" class="link link--external">gulp</a>            and <a href="http://postcss.org/" class="link link--external">PostCSS</a> and consists of several steps:
             <ul class="list list--ordered">
@@ -598,13 +617,13 @@ div.block__elem {
 
 
         <section id="component-library__form-elements">
-          <h2 class="heading heading--large">Form Elements</h2>
+          <h3 class="heading heading--medium">Form Elements</h3>
           <p>Our Forms have to be in a really good shape, just like our Brand Models.
             <br /> Here is the Guide on how to implement all kinds of Form Elements</p>
 
           <div class="section">
             <div class="panel">
-              <h3 class="heading heading--medium">Input</h3>
+              <h4 class="heading heading--small">Input</h4>
               <p>Text Input fields</p>
 
               <form class="form">
@@ -664,7 +683,7 @@ div.block__elem {
 
           <div class="section">
             <div class="panel">
-              <h3 class="heading heading--medium">Textarea</h3>
+              <h4 class="heading heading--small">Textarea</h4>
               <p>Textarea</p>
               <form class="form">
                 <label for="textarea" class="form__label">Place your thoughts</label>
@@ -679,7 +698,7 @@ div.block__elem {
 
           <div class="section">
             <div class="panel">
-              <h3 class="heading heading--medium">Radio Checkboxes</h3>
+              <h4 class="heading heading--small">Radio Checkboxes</h4>
               <p>Checkboxes</p>
               <form class="form">
                 <fieldset>
@@ -713,7 +732,7 @@ div.block__elem {
           </div>
         <div class="section">
           <div class="panel">
-            <h3 class="heading heading--medium">Select Fields</h3>
+            <h4 class="heading heading--small">Select Fields</h4>
             <p>Select Fields</p>
             <form class="form">
               <label for="select" class="form__label">Select Field:</label>
